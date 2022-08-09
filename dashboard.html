@@ -8,20 +8,30 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!--Icon-->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!--Core Css File-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--CSS File-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!--Aside start-->
-    <aside class="shrik">
+    <aside>
         <div class="sidebar-head">
-            <a href="" class="sidenav-head">
+            <div class="sidenav-head">
                 <img src="assets/img/favicon.png" alt="">
-                <h4>MOON</h4>
-            </a>
+                <h4 class="mb-0">MOON</h4>
+            </div>
         </div>
         <div id="sidenav-collapse-main">
-            <ul class="sidebar-nav">
+            <ul class="sidebar-nav p-0">
+                <li class="sidebar-item" >
+                    <a href="" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-home"></i>
+                            <span class="sidebar-link-text">Dashboard</span>
+                        </div>
+                    </a>
+                </li>
                 <li class="sidebar-item">
                     <a href="" class="sidebar-link">
                         <div class="link-items">
@@ -73,10 +83,64 @@
                 
             </ul>
         </div>
+        <div class="sidenav-footer">
+            <ul class="sidebar-nav p-0">
+                <li class="sidebar-item">
+                    <a href="" class="sidebar-link">
+                        <div class="link-items">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <span class="sidebar-link-text">Logout</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </aside>
     <!--Aside end-->
     <!--Main-->
+    <main>
+        <!--Navbar start-->
+        <div class="nav">
+            <div class="burger-nav">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="burger-mobile" onclick="change(this)">
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+            </div>
+            <div class="navitem-box">
+                <div class="search-box">
+                    <div class="form-groups">
+                        <form action="">
+                            <input type="search" class="form-controls" placeholder="Search">
+                        </form>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="profile-group">
+                    <a href="">
+                        <div class="profile">
+                            <div class="profile-name">
+                                <p class="mb-0">Lucien</p>
+                                <span class="text-black-50">Admin</span>
+                            </div>
+                            <img src="assets/img/user/Upstream-1.png" class="user-profile" alt="">
+                        </div>
+                    </a>
+                    <div class="active-status">
+                        <div class="online"></div>
+                        <!-- <div class="offline"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>
     <!--Core Js File-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

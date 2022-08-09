@@ -8,6 +8,13 @@
     --main-body : #fafafafb;
     --light-color : #fff;
     --text-color : #383838;
+    --grey-color : #f8f8f8;
+    --online-color : #59CE8F;
+    --offline-color : #4c4c4c;
+}
+@font-face{
+    font-family: Grande-Foyage ;
+    src: url("/assets/font/GrandeFoyage.ttf");
 }
 
 body{
@@ -20,17 +27,23 @@ html{
 a{
     text-decoration: none;
 }
+
+/*aside start*/
 aside{
     position: fixed;
-    width: 30rem;
+    width: 28rem;
     height: 100%;
     background-color: var(--light-color);
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
-/* aside.shrik{
+aside.shrink{
     width: 8rem;
-} */
+}
 .sidebar-head{
     padding: 2.3rem 1.8rem;
     margin-bottom: 1rem;
@@ -38,6 +51,7 @@ aside{
 .sidenav-head{
     display: flex;
     align-items: center;
+    user-select: none;
 }
 .sidenav-head img{
     width: 5rem;
@@ -47,6 +61,9 @@ aside{
     font-size: 1.8rem;
     margin-left: 1.8rem;
     color: var(--text-color);
+    font-family: Grande-Foyage;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
 }
 ul li{
     list-style: none;
@@ -58,6 +75,7 @@ ul li{
     font-size: 2rem;
     padding: 1.5rem 1rem;
     margin: 0 1rem;
+    border-radius: 1rem;
 }
 .link-items i{
     padding: 1rem;
@@ -67,8 +85,157 @@ ul li{
     margin-left: 2rem;
     font-size: 1.6rem;
     color: var(--text-color);
+    white-space: nowrap;
 }
 .sidebar-item :hover{
-    background-color: rgb(154, 154, 154);
-    border-radius: 1rem;
+    background-color: #2C3333;
+    transition: 0.2s;
 }
+.sidebar-item:hover .sidebar-link-text,
+.sidebar-item:hover i{
+    color: var(--light-color);
+}
+.sidenav-footer{
+margin-block-start: auto;
+}
+/*aside end*/
+/* main start*/
+
+main{
+    width: calc(100% - 28rem);
+    position: absolute;
+    left: 28rem;
+    transition: 0.5s;
+    padding:0 0.8rem ;
+}
+main.expand{
+    width: calc(100% - 9rem);
+    left: 9rem ;
+}
+/* Nav start */
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 0.8rem;
+    margin-top: 0.6rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    padding: 1rem 2rem;
+    transition: 0.5s;
+}
+.burger-nav{
+    cursor: pointer;
+}
+.burger-mobile{
+    cursor: pointer;
+    display: none;
+}
+.line1,.line2{
+    width: 3rem;
+    height: 0.3rem;
+    margin: 0.5rem;
+    background-color: var(--text-color);
+    pointer-events: none;
+    border-radius: 8px;
+    transition: 0.5s all;
+}
+.line3{
+    width: 2rem;
+    height: 0.3rem;
+    margin: 0.5rem;
+    background-color: var(--text-color);
+    pointer-events: none;
+    border-radius: 8px;
+    transition: 0.5s all;
+}
+.burger-nav:hover .line1{
+    width: 1.8rem;
+}
+.burger-nav:hover .line2{
+    width: 2.5rem;
+}
+.burger-nav:hover .line3{
+    width: 3rem;
+}
+.line4,.line5,.line6{
+    width: 3rem;
+    height: 0.3rem;
+    margin: 0.5rem;
+    background-color: var(--text-color);
+    pointer-events: none;
+    border-radius: 8px;
+}
+.navitem-box{
+    display: flex;
+    padding: 0 3rem;
+}
+.form-groups{
+    display: inline-block;
+    position: relative;
+}
+.form-groups .form-controls{
+    padding: 1rem 0 1rem 3.4rem;
+    width: 30rem;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    background-color: var(--grey-color) ;
+    outline: none;
+    font-size: 1.6rem;
+}
+.form-groups i{
+    position: absolute;
+    left: 1.2rem;
+    top: 1.5rem;
+    font-size: 1.6rem;
+    color: #5c5c5c;
+}
+.profile-group{
+    position: relative;
+    margin-left: 4rem;
+}
+.profile{
+    display: flex;
+}
+.profile .profile-name{
+    margin-right: 1rem;
+}
+.profile .profile-name p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.profile .profile-name span{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-align: left;
+}
+.profile .user-profile{
+    max-width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.active-status{
+    position: absolute;
+    top: 3.4rem;
+    right: 0rem;
+}
+.active-status .online{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--online-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.active-status .offline{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--offline-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+/* Nav end */
