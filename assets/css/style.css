@@ -239,3 +239,82 @@ main.expand{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 /* Nav end */
+.content{
+    margin-left: 1rem;
+    margin-right: 0.8rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex: 1 1 30rem;
+}
+.content .quote-container{
+    display: flex;
+    align-items: center;
+    background-color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    max-width: 70rem;
+    padding: 1.5rem 2.3rem;
+    border-radius: 0.8rem;
+    line-height: 2.7rem;
+}
+.text-header{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.paragraph{
+    font-size: 1.5rem;
+    color: var(--offline-color);
+}
+.quote-container .user-illustrator{
+    width: 20rem;
+    position: relative;
+    top: -4rem;
+}
+.weather-container{
+    width: 100%;
+    padding: 1.5rem 2.3rem;
+    background-color: var(--light-color);
+    /* background-color: #FCF8E8; */
+    background-image: url("/assets/img/Weather\ Icons/rain.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 0.8rem;
+    margin-left: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.text-container{
+    padding: 2rem;
+}
+.text-container .temp h3,
+.text-container .temp span{
+    display: inline-block;
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+.weather-detail .weather{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+.weather-detail .location{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.w-detail{
+    display: flex;
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+}
+.w-detail .feel-like{
+    margin-right: 0.8rem;
+}
+.w-detail .humidity{
+    margin-left: 0.8rem;
+}
+.weather-illustrator{
+    width:10rem;
+    position: relative;
+    top: -8rem;
+    right: 1rem;
+}
