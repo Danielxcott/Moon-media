@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Padauk:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-body : #fafafafb;
+    --light-color : #fff;
+    --text-color : #383838;
+}
+
+body{
+    font-family: 'Montserrat','Roboto','Padauk','sans-serif';
+    background-color: var(--main-body);
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+aside{
+    position: fixed;
+    width: 30rem;
+    height: 100%;
+    background-color: var(--light-color);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+/* aside.shrik{
+    width: 8rem;
+} */
+.sidebar-head{
+    padding: 2.3rem 1.8rem;
+    margin-bottom: 1rem;
+}
+.sidenav-head{
+    display: flex;
+    align-items: center;
+}
+.sidenav-head img{
+    width: 5rem;
+    height: 5rem;
+}
+.sidenav-head h4{
+    font-size: 1.8rem;
+    margin-left: 1.8rem;
+    color: var(--text-color);
+}
+ul li{
+    list-style: none;
+    width: 100%;
+}
+.link-items{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+}
+.link-items i{
+    padding: 1rem;
+    color: var(--text-color);
+}
+.sidebar-link-text{
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+.sidebar-item :hover{
+    background-color: rgb(154, 154, 154);
+    border-radius: 1rem;
+}
