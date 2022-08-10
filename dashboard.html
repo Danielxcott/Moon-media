@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <!--Core Css File-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
     <!--CSS File-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -17,20 +19,20 @@
     <!--Aside start-->
     <aside>
         <div class="sidebar-head">
-            <div class="sidenav-head">
+            <div class="logo-content">
                 <img src="assets/img/favicon.png" alt="">
                 <h4 class="mb-0">MO<span>O</span>N</h4>
             </div>
+            <i class="fa-solid fa-angle-right" id="back-btn"></i>
         </div>
-        <div id="sidenav-collapse-main">
-            <ul class="sidebar-nav p-0">
+            <ul class="nav-list p-0">
                 <li class="sidebar-item" >
                     <a href="" class="sidebar-link">
                         <div class="link-items">
                             <i class="fa-solid fa-home"></i>
                             <span class="sidebar-link-text">Dashboard</span>
                         </div>
-                    </a>
+                </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="" class="sidebar-link">
@@ -82,7 +84,6 @@
                 </li>
                 
             </ul>
-        </div>
         <div class="sidenav-footer">
             <ul class="sidebar-nav p-0">
                 <li class="sidebar-item">
@@ -120,6 +121,12 @@
                         <i class="fas fa-search"></i>
                     </div>
                 </div>
+                <div class="noti-group">
+                    <a href="" class="noti-bell">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <div class="noti-status"></div>
+                </div>
                 <div class="profile-group">
                     <a href="">
                         <div class="profile">
@@ -141,7 +148,7 @@
         <!--Content section-->
         <section class="content">
             <div class="quote-container">
-                <div>
+                <div class="quote-text">
                     <h4 class="text-header">Hello Lucien</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus obcaecati quos, quidem dignissimos perspiciatis dolor aut. Eaque voluptates nostrum nesciunt.</p>
                 </div>
@@ -165,10 +172,189 @@
                 <!-- <img src="assets/img/Weather Icons/cloud.svg" class="weather-illustrator" alt=""> -->
             </div>
         </section>
+        <section class="post-content">
+            <div class="trend-post">
+                <div class="post-title">
+                    <h4 class="mb-0">Trending Posts</h4>
+                    <a href="">See All</a>
+                </div>
+                <div class="owl-carousel trend-carousel owl-theme">
+                    <div class="item">
+                        <a href="">
+                            <div class="post-card">
+                               <h4 class="post-header">Lorem ipsum dolor sit amet consectetur.</h4>
+                               <p class="post-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque neque aperiam tenetur debitis. Illum recusandae provident expedita aut sapiente alias, Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cum. ...</p>
+                            </div>
+                            <div class="post-controller">
+                                <div class="post-viewers">
+                                    <img src="assets/img/user/Teamwork-1.png" class="viewer1" alt="">
+                                    <img src="assets/img/user/Teamwork-2.png" class="viewer-2" alt="">
+                                    <img src="assets/img/user/Teamwork-3.png" class="viewer-3" alt="">
+                                </div>
+                                <div class="post-likes">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="mb-0"><span>24</span> likes</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-comment">
+                <div class="post-title">
+                    <h4 class="mb-0">All Comments</h4>
+                    <a href="">See all</a>
+                </div>
+                <div class="comment-container">
+                    <div class="comment-item">
+                        <a href="">
+                            <div class="comments">
+                                <img src="assets/img/user/Teamwork-6.png" class="user-pic" alt="">
+                                <div class="comment-title">
+                                    <h3 class="mb-0">Lucifer</h3>
+                                    <span>2 minutes ago</span>
+                                </div>
+                            </div>
+                            <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos?</p>
+                        </a>
+                        <div class="user-active-status">
+                            <div class="user-online"></div>
+                            <!-- <div class="user-offline"></div> -->
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <a href="">
+                            <div class="comments">
+                                <img src="assets/img/user/Teamwork-6.png" class="user-pic" alt="">
+                                <div class="comment-title">
+                                    <h3 class="mb-0">Lucifer</h3>
+                                    <span>2 minutes ago</span>
+                                </div>
+                            </div>
+                            <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos?</p>
+                        </a>
+                        <div class="user-active-status">
+                            <div class="user-online"></div>
+                            <!-- <div class="user-offline"></div> -->
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <a href="">
+                            <div class="comments">
+                                <img src="assets/img/user/Teamwork-6.png" class="user-pic" alt="">
+                                <div class="comment-title">
+                                    <h3 class="mb-0">Lucifer</h3>
+                                    <span>2 minutes ago</span>
+                                </div>
+                            </div>
+                            <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos?</p>
+                        </a>
+                        <div class="user-active-status">
+                            <div class="user-online"></div>
+                            <!-- <div class="user-offline"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chart-content">
+        <div class="chart-card">
+                <div class="post-viewers">
+                    <h4 class="mb-0">Viewers & Posts</h4>
+                    <div class="viewers-profile">
+                    <img src="assets/img/user/Teamwork-1.png" class="viewer1" alt="">
+                    <img src="assets/img/user/Teamwork-2.png" class="viewer-2" alt="">
+                    <img src="assets/img/user/Teamwork-3.png" class="viewer-3" alt="">
+                    </div>
+                </div>
+                <canvas id="ov" height="150"></canvas>
+        </div>
+        </section>
+
     </main>
     <!--Core Js File-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="node_modules/chart.js/dist/chart.min.js"></script>
     <script src="assets/js/app.js"></script>
+        <script>
+            let dateArr=["jul 21","jul 20","jul 19","jul 18","jul 17","jul 16","jul 15","jul 14","jul 13","jul 12","jul 11"];
+            let orderCounterArr=[7,5,6,4,6,4,8,6,8,9,6];
+            let viewcounter = [13,12,15,14,20,17,19,16,23,33,16];
+
+            let ctx = document.getElementById('ov').getContext('2d');
+    $(function() {
+        let myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: dateArr,
+                datasets: [{
+                        label: 'Viewers',
+                        data: orderCounterArr,
+                        backgroundColor: [
+                            " #94B49F",
+                        ],
+                        borderColor: [
+                            "#94B49F",
+                        ],
+                        borderWidth: 2,
+                        tension: 0,
+                        fill: false,
+                        borderColor: '#94B49F',
+                        
+                    },
+                    {
+                        label: 'Posts',
+                        data: viewcounter,
+                        backgroundColor: [
+                            " #ECB390",
+                        ],
+                        borderColor: [
+                            "#ECB390",
+                        ],
+                        borderWidth: 1,
+                        tension: 0,
+                        fill: false,
+                        borderColor: '#ECB390',
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y:{
+                        grid:{
+                            display: false,
+                            drawBorder : false,
+                        },
+                        ticks:{
+                            display: false,
+                        }
+                    },
+                    x: {
+                    grid: {
+                    display: false,
+                    },
+                        ticks:{
+                            display: false,
+                            borderColor: "#fff",
+                            drawBorder : false,
+                        }
+                    }
+
+                },
+                legend: {
+                    labels: {
+                        usePointStyle: true,
+                    }
+                },
+
+
+            },
+        });
+
+    })
+
+     </script>
 </body>
 </html>

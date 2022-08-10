@@ -2,3 +2,23 @@ $(".burger-nav").click(function(){
     $("aside").toggleClass("shrink");
     $("main").toggleClass("expand");
 })
+
+$('.trend-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:true,
+    autoplay:true,
+    touchDrag:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        400:{
+            items:2
+        },
+        800:{
+            items:2
+        }
+    }
+})
