@@ -57,6 +57,9 @@ aside {
 aside.shrink {
   width: 8rem;
 }
+aside .nav-close{
+    display: none;
+}
 .sidebar-head {
   margin: 1rem 0rem;
   display: flex;
@@ -74,7 +77,7 @@ aside.shrink {
   height: 5rem;
 }
 .logo-content h4 {
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   margin-left: 1.8rem;
   color: var(--text-color);
   font-family: Grande-Foyage;
@@ -580,7 +583,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /*Chart content start*/
 .chart-wrapper {
   margin-top: 4.3rem;
-  width: 50rem;
+  width: 44rem;
 }
 .chart-wrapper.expand {
   width: 60rem;
@@ -657,3 +660,116 @@ a {
 }
 /*New User Container end*/
 /*Box content end*/
+
+/*Responsive*/
+@media screen and (max-width:450px), (max-width:850px){
+    aside{
+        width: 28rem;
+        height: 100vh;
+        position: fixed;
+        left: -50rem;
+        top: 0;
+        z-index: 10;
+        background-color: var(--light-color);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        transition: all 0.8s;
+    }
+    aside.active{
+        left: 0rem;
+    }
+    aside .nav-close{
+        display: block;
+        position: fixed;
+        background: var(--text-color);
+        transition: all 0.8s;
+        width: 0;
+        height: 100%;
+        right: -28rem;
+        cursor: pointer;
+        opacity: 0.1;
+        z-index: 1;
+    }
+    
+    aside.active .nav-close{
+        width: 100vw;
+      }
+    main{
+        width: 100%;
+        position: static;
+    }
+    .nav .navitem-box{
+        padding: 0 0.8rem;
+    }
+    .nav .burger-nav,
+    .nav .navitem-box .search-box{
+        display: none;
+    }
+    .nav .burger-mobile{
+        display: block;
+    }
+    .burger-mobile:hover .line4 {
+        width: 1.8rem;
+      }
+      .burger-mobile:hover .line5 {
+        width: 2.5rem;
+      }
+      .burger-mobile:hover .line6 {
+        width: 3rem;
+      }
+    main .content{
+        flex-direction: column;
+    }
+    main .post-content{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    main .post-content .trend-post .owl-carousel{
+        margin: auto;
+    }
+    main .content .quote-container{
+        flex-direction: column-reverse;
+    }
+    main .content .weather-container{
+        margin-left: 0;
+        margin-top: 2rem;
+        background-position: top right;
+        background-size: 14rem;
+    }
+    .content .weather-container .text-container{
+        padding: 0.5rem;
+    }
+    main .post-content .trend-post,
+    main .post-content .chart-wrapper{
+        width: 100%;
+    }
+    main .box-content{
+        margin: 4.3rem 0;
+    }
+}
+@media screen and (max-width:280px){
+    aside .sidebar-head #back-btn{
+        display: block;
+        padding: 1rem;
+    }
+    .nav .navitem-box .profile-group{
+        margin-left: 3rem;
+    }
+    .nav .navitem-box .profile-group .profile .profile-name{
+        display: none;
+    }
+    .nav .navitem-box .profile-group .profile-dropbox{
+        right: -30px;
+    }
+    .noti-nav{
+        width: 20rem;
+    }
+    .noti-nav .noti-close{
+        right: 20rem;
+    }
+    .content .weather-container{
+        background-size: 9rem;
+    }
+    .content .weather-container .text-container{
+        padding: 0.5rem;
+    }
+}

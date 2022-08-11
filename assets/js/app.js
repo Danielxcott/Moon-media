@@ -10,14 +10,29 @@ $("#dropbox-btn").click(function(){
     $(".profile-dropbox").toggleClass("show");
 });
 
+//sidebar
 $(".noti-group .noti-bell").click(function(){
     $(".noti-nav").toggleClass("active");
     $("body").toggleClass("hide");
 })
+
 $(".noti-close").click(function(){
     $(".noti-nav").toggleClass("active");
     $("body").toggleClass("hide");
 })
+
+$(".nav-close").click(function(){
+    $("aside").toggleClass("active");
+    $("body").toggleClass("hide");
+})
+
+$("aside .sidebar-head #back-btn").click(function(){
+    $("aside").toggleClass("active");
+})
+function change(){
+    $("aside").toggleClass("active");
+    $("body").toggleClass("hide");
+}
 
 //owl carousel
 $('.trend-carousel').owlCarousel({
@@ -50,6 +65,22 @@ $('.user-profile-left').slick({
     autoplaySpeed: 900,
     accessibility: false,
     useTransform: false,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+          },
+          {
+            breakpoint: 300,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+          },
+    ]
   });
   $('.user-profile-box').slick({
     slidesToShow: 2,
@@ -83,7 +114,7 @@ function weatherDetails(info)
 {
     console.log(info);  
     if(info.cod == "400"){
-        weatherContainer.style.backgroundImage = "url('/assets/img/dwarf.gif')";
+        weatherContainer.style.backgroundImage = "url('/assets/img/gif/dwarf.gif')";
         weatherContainer.style.backgroundSize = "cover";
         weatherContainer.style.backgroundPosition = "center";
         $(".text-container").remove();
