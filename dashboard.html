@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
     <!--CSS File-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,7 +23,7 @@
         <div class="sidebar-head">
             <div class="logo-content">
                 <img src="assets/img/favicon.png" alt="">
-                <h4 class="mb-0">MO<span>O</span>N</h4>
+                <h4 class="mb-0">M<span><span>O</span>O</span>N</h4>
             </div>
             <i class="fa-solid fa-angle-right" id="back-btn"></i>
         </div>
@@ -122,13 +124,12 @@
                     </div>
                 </div>
                 <div class="noti-group">
-                    <a href="" class="noti-bell">
+                    <div class="noti-bell">
                         <i class="fas fa-bell"></i>
-                    </a>
+                    </div>
                     <div class="noti-status"></div>
                 </div>
-                <div class="profile-group">
-                    <a href="">
+                <div class="profile-group" id="dropbox-btn">
                         <div class="profile">
                             <div class="profile-name">
                                 <p class="mb-0">Lucien</p>
@@ -136,10 +137,25 @@
                             </div>
                             <img src="assets/img/user/Upstream-1.png" class="user-profile" alt="">
                         </div>
-                    </a>
                     <div class="active-status">
                         <div class="online"></div>
                         <!-- <div class="offline"></div> -->
+                    </div>
+                    <div class="profile-dropbox">
+                        <ul class="dropbox-list p-0">
+                            <li class="drop-list-item">
+                                <a href="">
+                                    <i class="fas fa-user"></i>
+                                    <span class="ms-3">Profile</span>
+                                </a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a href="">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <span class="ms-3">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -164,8 +180,8 @@
                         <p class="weather mb-0">Moderate rain</p>
                         <p class="location mb-0">Yangon,Myanmar</p>
                         <div class="w-detail">
-                            <p class="feel-like">Feels like : <span>25°C</span></p>|
-                            <p class="humidity">Humidity : <span>88%</span></p>
+                            <p class="feel-like">Feels like : <span class="temp">25°C</span></p>|
+                            <p class="humidity">Humidity : <span class="percent">88%</span></p>
                         </div>
                     </div>
                 </div>
@@ -183,7 +199,7 @@
                         <a href="">
                             <div class="post-card">
                                <h4 class="post-header">Lorem ipsum dolor sit amet consectetur.</h4>
-                               <p class="post-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque neque aperiam tenetur debitis. Illum recusandae provident expedita aut sapiente alias, Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cum. ...</p>
+                               <p class="post-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque neque aperiam tenetur debitis. Illum recusandae provident expedita aut sapiente alias ...</p>
                             </div>
                             <div class="post-controller">
                                 <div class="post-viewers">
@@ -200,82 +216,105 @@
                     </div>
                 </div>
             </div>
-            <div class="post-comment">
-                <div class="post-title">
-                    <h4 class="mb-0">All Comments</h4>
-                    <a href="">See all</a>
-                </div>
-                <div class="comment-container">
-                    <div class="comment-item">
-                        <a href="">
-                            <div class="comments">
-                                <img src="assets/img/user/Teamwork-6.png" class="user-pic" alt="">
-                                <div class="comment-title">
-                                    <h3 class="mb-0">Lucifer</h3>
-                                    <span>2 minutes ago</span>
-                                </div>
-                            </div>
-                            <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos?</p>
-                        </a>
-                        <div class="user-active-status">
-                            <div class="user-online"></div>
-                            <!-- <div class="user-offline"></div> -->
+            <div class="chart-wrapper">
+                <div class="chart-card">
+                    <div class="post-viewers">
+                        <h4 class="mb-0">Viewers & Posts</h4>
+                        <div class="viewers-profile">
+                        <img src="assets/img/user/Teamwork-1.png" class="viewer1" alt="">
+                        <img src="assets/img/user/Teamwork-2.png" class="viewer-2" alt="">
+                        <img src="assets/img/user/Teamwork-3.png" class="viewer-3" alt="">
                         </div>
                     </div>
-                    <div class="comment-item">
-                        <a href="">
-                            <div class="comments">
-                                <img src="assets/img/user/Teamwork-6.png" class="user-pic" alt="">
-                                <div class="comment-title">
-                                    <h3 class="mb-0">Lucifer</h3>
-                                    <span>2 minutes ago</span>
-                                </div>
-                            </div>
-                            <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos?</p>
-                        </a>
-                        <div class="user-active-status">
-                            <div class="user-online"></div>
-                            <!-- <div class="user-offline"></div> -->
-                        </div>
-                    </div>
-                    <div class="comment-item">
-                        <a href="">
-                            <div class="comments">
-                                <img src="assets/img/user/Teamwork-6.png" class="user-pic" alt="">
-                                <div class="comment-title">
-                                    <h3 class="mb-0">Lucifer</h3>
-                                    <span>2 minutes ago</span>
-                                </div>
-                            </div>
-                            <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos?</p>
-                        </a>
-                        <div class="user-active-status">
-                            <div class="user-online"></div>
-                            <!-- <div class="user-offline"></div> -->
-                        </div>
-                    </div>
+                    <canvas id="ov" height="170"></canvas>
                 </div>
             </div>
         </section>
-        <section class="chart-content">
-        <div class="chart-card">
-                <div class="post-viewers">
-                    <h4 class="mb-0">Viewers & Posts</h4>
-                    <div class="viewers-profile">
-                    <img src="assets/img/user/Teamwork-1.png" class="viewer1" alt="">
-                    <img src="assets/img/user/Teamwork-2.png" class="viewer-2" alt="">
-                    <img src="assets/img/user/Teamwork-3.png" class="viewer-3" alt="">
+        <section class="box-content">
+        <div class="new-user-card">
+                <div class="user-title">
+                <h4 class="mb-0">All Users</h4>
+                <a href="">See all</a>
+                </div>
+                <div class="new-user-body">
+                    <div class="user-profile-left">
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-5.png" class="viewer1" alt=""> 
+                        </a><a href="">
+                            <img src="assets/img/user/Teamwork-6.png" class="viewer1" alt=""> 
+                        </a>
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-1.png" class="viewer1" alt=""> 
+                        </a>
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-2.png" class="viewer1" alt=""> 
+                        </a>
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-3.png" class="viewer1" alt=""> 
+                        </a>
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-4.png" class="viewer1" alt=""> 
+                        </a>
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-2.png" class="viewer1" alt=""> 
+                        </a>
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-4.png" class="viewer1" alt=""> 
+                        </a>
+                        <a href="">
+                            <img src="assets/img/user/Teamwork-7.png" class="viewer1" alt=""> 
+                        </a>
                     </div>
                 </div>
-                <canvas id="ov" height="150"></canvas>
         </div>
         </section>
-
     </main>
+     <!--Main content-->
+    <!--Noti-bar-->
+    <nav class="noti-nav">
+        <div class="noti-close"></div>
+        <ul class="noti-list">
+            <li class="noti-wrapper">
+                <a href="" class="noti-link">
+                    <div class="noti-item">
+                        <img src="assets/img/user/Teamwork-7.png" alt="">
+                        <div class="noti-title">
+                            <h3>Thomas</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mole ...</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="noti-wrapper">
+                <a href="" class="noti-link">
+                    <div class="noti-item">
+                        <img src="assets/img/user/Teamwork-3.png" alt="">
+                        <div class="noti-title">
+                            <h3>Andrea</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mole ...</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="noti-wrapper">
+                <a href="" class="noti-link">
+                    <div class="noti-item">
+                        <img src="assets/img/user/Teamwork-4.png" alt="">
+                        <div class="noti-title">
+                            <h3>Taylor</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mole ...</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Noti-bar end-->
     <!--Core Js File-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="node_modules/chart.js/dist/chart.min.js"></script>
     <script src="assets/js/app.js"></script>
         <script>
@@ -334,11 +373,11 @@
                     x: {
                     grid: {
                     display: false,
+                    drawBorder : false,
                     },
                         ticks:{
                             display: false,
                             borderColor: "#fff",
-                            drawBorder : false,
                         }
                     }
 
