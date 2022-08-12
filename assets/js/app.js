@@ -34,20 +34,30 @@ function change(){
     $("body").toggleClass("hide");
 }
 
-//owl carousel
-$('.trend-carousel').owlCarousel({
+// owl carousel
+$('.post-content .trend-post .trend-carousel').owlCarousel({
     loop:true,
-    margin:10,
-    nav:true,
-    dots:true,
-    autoplay:true,
+    margin:20,
+    autoWidth:true,
+    nav:false,
+    dots:false,
     touchDrag:true,
+    responsiveClass:true,
     responsive:{
         0:{
             items:1
         },
-        400:{
+        200:{
+            items:1
+        },
+        340:{
             items:2
+        },
+        400:{
+            items:1
+        },
+        540:{
+            itema:1
         },
         800:{
             items:2
@@ -135,7 +145,7 @@ function weatherDetails(info)
         }else if(id >=200 && id <= 232){
             weatherContainer.style.backgroundImage  = "url('/assets/img/Weather\ Icons/storm.svg')";
         }else if(id >= 300 && id <= 321){
-            weatherContainer.style.backgroundImage  = "url('/assets/img/Weather\ Icons/drizzle.svg')";
+            weatherContainer.style.backgroundImage  = "url('/assets/img/Weather\ Icons/drizzle.png')";
         }else if(id >= 500 && id<= 531){
             weatherContainer.style.backgroundImage  = "url('/assets/img/Weather\ Icons/rain.svg')";
         }else if(id >= 600 && id<= 622){
