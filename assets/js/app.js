@@ -90,6 +90,7 @@ $('.user-profile-left').slick({
                 slidesToScroll: 1,
               },
           },
+          
     ]
   });
   $('.user-profile-box').slick({

@@ -692,7 +692,7 @@ a {
   position: absolute;
   top: 18px;
   left: 20px;
-  background: #eff0f291;
+  background: #eff0f26d;
   width: 3rem;
   height: 3rem;
   font-size: 1.8rem;
@@ -700,6 +700,7 @@ a {
   line-height: 3rem;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  backdrop-filter: blur(2px);
 }
 .profile-head {
   display: flex;
@@ -717,6 +718,7 @@ a {
   width: 10rem;
   height: 10rem;
   object-fit: cover;
+  border-radius: 50%;
 }
 .profile-head .profile-name h4 {
   font-size: 2.2rem;
@@ -753,11 +755,19 @@ a {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1.4rem;
+  /* height: 100vh; */
+}
+.about-tab,.edit-tab{
   padding: 2.8rem;
   background-color: var(--light-color);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   border-radius: 1.3rem;
-  /* height: 100vh; */
+}
+.post-tab{
+  padding: 2.8rem;
+  background-color: #f1f1f1;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  border-radius: 1.3rem;
 }
 .profile-detail .tab-content 
 .about-tab .about {
@@ -773,7 +783,7 @@ a {
   display: flex;
   flex: 1 0 46rem;
   align-items: center;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 .profile-detail
   .about-group
@@ -887,8 +897,9 @@ a {
 /*Post Tab start*/
 .post-tab .post-lists .post-card {
   display: flex;
-  background-color: var(--grey-color);
-  border-radius: 1rem;
+  background-color: var(--light-color);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 1.2rem;
   overflow: hidden;
   margin-top: 2rem;
 }
@@ -979,6 +990,9 @@ opacity: 0;
   color: var(--offline-color);
   margin: 0;
 }
+.post-img-mobile{
+  display: none;
+}
 .post-tab .post-lists 
 .post-paragraph {
   padding: 2.4rem;
@@ -1054,7 +1068,6 @@ opacity: 0;
 .all-reaction.active{
   top: 42px;
 }
-
 .post-tab .post-lists 
 .post-card .post-detail 
 .all-reaction .user-like-lists{
@@ -1219,10 +1232,6 @@ padding-left: 1.3rem;
   font-size: 1.3rem;
 }
 
-
-
-
-
 /*Post Tab end*/
 /*Profile detail end*/
 
@@ -1280,7 +1289,48 @@ padding-left: 1.3rem;
   main .content .weather-container {
     background-position: right;
   }
+  /*Profile page*/
+  .profile-detail .tab-content .about-tab .about-group .group-item {
+    flex: 1 0 31rem;
 }
+.post-tab .post-lists .post-card .post-img img {
+  width: 40rem;
+  height: 40rem;
+}
+.post-tab .post-lists .post-card .post-img {
+  flex: 1 1 37rem;
+}
+.post-tab .post-lists .post-card .post-detail {
+  flex: 1 1 42rem;
+}
+.profile-detail .tab-content .edit-tab .form-group .form-item {
+  flex: 1 0 30rem;
+}
+.profile-detail .form-group .form-input .form-control {
+  width: 26rem;
+}
+}
+@media screen and (width:1024px)
+{
+  .post-tab .post-lists .post-card{
+    align-items: center;
+  }
+  .post-tab .post-lists .post-card .post-img
+  {
+    flex: 1 1 34rem;
+  }
+  .post-tab .post-lists .post-card .post-img img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .post-tab .post-lists .post-card .post-detail {
+    flex: 1 1 32rem;
+  }
+}
+
+
+
+
 @media screen and (max-width: 450px), (max-width: 850px), (max-width: 940px) {
   aside {
     width: 28rem;
@@ -1375,7 +1425,121 @@ padding-left: 1.3rem;
     width: 28rem !important;
     padding: 2rem !important;
   }
+
+  /*Profile page*/
+  .profile-head{
+    width: 23rem;
+  }
+  .profile-head .profile-pic {
+    position: absolute;
+    top: -57px;
+    left: 35px;
 }
+  .nav-tab{
+    padding: 2rem 3.5rem;
+  }
+  .nav-tab .nav-item {
+    flex: 1 1 11rem;
+  }
+  .nav-item .nav-link{
+    margin: auto;
+  }
+  .profile-detail .tab-content .about-tab, .edit-tab{
+    padding: 2rem;
+  }
+  .post-tab{
+    padding: 1rem;
+  }
+  .profile-detail .tab-content .about-tab .about, .edit{
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+  .profile-detail .tab-content .about-tab .about-group,
+  .profile-detail .tab-content .edit-tab form .form-group{
+    display: block;
+  }
+  .profile-detail .tab-content .about-tab .about-group .group-item,
+  .profile-detail .tab-content .edit-tab .edit h3 {
+    flex: none;
+  }
+  .profile-detail .about-group .group-item div:first-child {
+    flex: 0 0 5rem;
+  }
+  .profile-detail .about-group .group-item div:last-child{
+    flex: 2 0 23rem;
+  } 
+  .profile-detail .tab-content .edit-tab .edit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.profile-detail .form-group .form-input .form-control {
+  width: 100%;
+}
+.profile-detail .tab-content .edit-tab .form-group .form-item {
+  display: block;
+  flex: none;
+}
+.post-img-mobile{
+  display: block;
+}
+.post-tab .about{
+  padding: 2rem;
+}
+.post-tab .post-lists .post-card .post-detail .post-profile{
+  padding: 1.8rem;
+}
+.post-tab .post-lists .post-card .post-detail .post-profile img {
+  width: 5rem;
+  height: 5rem;
+}
+.post-tab .post-lists .post-card .post-detail,
+.post-tab .post-lists .post-card .post-img{
+  flex: none;
+}
+.post-tab .post-lists .post-card{
+  display: block;
+  margin-bottom:2rem;
+  border-radius: 1.3rem;
+  margin-top: 0;
+  /* padding: 0.5rem; */
+}
+#dot{
+  font-size: 2.5rem;
+}
+.post-img-web{
+  flex: none;
+  display: none;
+}
+.carousel-indicators {
+    margin-bottom: 1rem;
+}
+.post-tab .post-lists .post-card .post-img img {
+  width: 100%;
+  height: 100%;
+  /* height: 30rem; */
+  object-fit: cover;
+  margin: 0rem;
+  border-radius: 0.5rem;
+}
+.profile-card,.profile-detail{
+  margin: 1.4rem 0.3rem;
+  padding: 0rem;
+}
+.dropbox-list .dropbox-card {
+  z-index: 2;
+}
+.post-tab .post-lists .post-card .post-detail .all-comment .user-comment-lists {
+  margin-top: 1.3rem;
+  overflow: scroll;
+  position: relative;
+  z-index: -1;
+  height: 78vh;
+  /* height: 66vh; */
+}
+}
+
 @media screen and (max-width: 280px) {
   aside .sidebar-head #back-btn {
     display: block;
@@ -1402,4 +1566,74 @@ padding-left: 1.3rem;
   .content .weather-container .text-container {
     padding: 0.5rem;
   }
+  /*Profile page*/
+  .profile-cover img {
+    width: 100%;
+    height: 15rem;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+    object-fit: cover;
+  }
+  .profile-head {
+    width: 100%;
+    justify-content: center;
+    padding-left: 6rem;
+  }
+  .profile-head .profile-pic img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+  }
+  .profile-head .profile-pic {
+    position: absolute;
+    top: -40px;
+    left: 35px;
+}
+.nav-tab {
+  padding: 1rem;
+}
+.nav-tab .nav-item {
+  flex: 1 1 7rem;
+}
+.profile-detail .tab-content .about-tab, .edit-tab {
+  padding: 1.2rem;
+}
+.profile-detail .tab-content .about-tab .about, .edit {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.profile-detail .about-group .group-item div:last-child {
+  flex: 2 0 17rem;
+}
+.profile-detail .about-group .group-item div:last-child {
+  padding: 1.5rem;
+}
+.profile-detail .about-group .group-item div:first-child {
+  flex: 0 0 4rem;
+}
+.profile-detail .about-group .group-item div:first-child {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+}
+.post-tab .post-lists .post-card .post-detail .post-profile img {
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.post-tab .post-detail .post-user p {
+  font-size: 1rem;
+}
+#dot{
+  font-size: 2rem;
+}
+.post-tab .post-lists .post-card .post-detail .post-controller {
+  flex-wrap: wrap;
+}
+.post-controller .post-reaction{
+  margin-bottom: 1rem;
+}
+
+
 }
