@@ -776,8 +776,6 @@ a {
   margin-right: 2rem;
 }
 .profile-detail
-  .tab-content
-  .about-tab
   .about-group
   .group-item
   div:first-child {
@@ -792,26 +790,25 @@ a {
   text-align: center;
 }
 .profile-detail
-  .tab-content
-  .about-tab
   .about-group
   .group-item
   div:last-child {
   padding: 2rem;
 }
 .profile-detail
-  .tab-content
-  .about-tab
-  .about-group
   .group-item
   div:last-child
   label,
-.profile-detail .tab-content 
+.profile-detail
 .edit-tab .form-group 
 .form-input label {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
+  color: var(--offline-color);
+}
+.profile-detail .edit-tab .form-group .form-input label i{
+  padding-right: 1rem;
 }
 .profile-detail
   .tab-content
@@ -839,38 +836,21 @@ a {
 }
 .profile-detail .tab-content 
 .edit-tab .form-group 
-.form-icon {
-  font-size: 1.8rem;
-  color: var(--light-color);
-  background: var(--text-color);
-  box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px 0px;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  line-height: 5rem;
-  text-align: center;
-}
-.profile-detail .tab-content 
-.edit-tab .form-group 
 .form-input {
-  display: flex;
-  flex-direction: column;
   padding: 2rem;
 }
-.profile-detail .tab-content 
-.edit-tab .form-group 
+.profile-detail .form-group 
 .form-input .form-control {
-  width: 25rem;
-  padding: 1rem;
+  width: 30rem;
+  padding: 0.8rem;
   font-size: 1.6rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   border: none;
   border-radius: 0.8rem;
   background-color: #f9f9f9;
+  margin-top: 1rem;
 }
 .profile-detail
-  .tab-content
-  .edit-tab
   .form-group
   .form-input
   .form-control.is-invalid {
@@ -899,8 +879,8 @@ a {
 }
 .profile-detail .tab-content  
 .edit-tab .edit button:hover {
-  background-color: var(--online-color);
-  color: var(--text-color);
+  background-color: #002595;
+  color: var(--light-color);
   font-weight: 500;
 }
 /*Edit Profile*/
@@ -1006,6 +986,12 @@ opacity: 0;
   text-align: left;
   overflow: scroll;
   height: 26rem;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+.post-tab .post-lists 
+.post-paragraph::-webkit-scrollbar {
+  display: none;
 }
 .post-tab .post-lists 
 .post-card .post-detail 
@@ -1075,7 +1061,13 @@ opacity: 0;
   margin-top: 1.3rem;
   overflow: scroll;
   height: 100%;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
+.all-reaction .user-like-lists::-webkit-scrollbar {
+  display: none;
+}
+
 .all-reaction .user-like-lists 
 .user-like-tab{
   background-color: var(--light-color);
@@ -1097,6 +1089,113 @@ opacity: 0;
   justify-content: space-between;
   width: 100%;
 }
+.all-comment{
+  position: absolute;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 4200px;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  overflow: scroll;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+.all-comment.active{
+  top: 42px;
+}
+.all-comment .header{
+  position: sticky;
+  top: 2rem;
+  margin-top: 2rem;
+  padding:0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.all-comment .header i{
+  font-size: 2rem;
+}
+.post-tab .post-lists 
+.post-card .post-detail 
+.all-comment .user-comment-lists{
+  margin-top: 1.3rem;
+  height: 43vh;
+  overflow: scroll;
+  position: relative;
+  z-index: -1;
+}
+.all-comment .user-comment-lists::-webkit-scrollbar {
+  display: none;
+}
+.all-comment .user-comment-lists 
+.user-comment-tab{
+  background-color: var(--light-color);
+  border-radius: 1.3rem;
+  padding: 1.4rem;
+  margin:1.5rem;
+}
+.all-comment .user-comment-lists 
+.user-comment-tab img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.all-comment .user-comment-tab 
+.user-name-group{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.user-name-group .name-group{
+  padding-left: 0.8rem;
+}
+.user-name-item .trash-btn{
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  color: var(--like-color);
+  background-color: transparent;
+}
+.all-comment .user-comment-tab 
+.comment{
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.user-comment-lists .comment-box{
+  position: sticky;
+  bottom: 0px;
+  background: #797979;
+  padding: 1.8rem;
+  display: flex;
+  align-items: center;
+  display: none;
+  transition: all 0.4s;
+  border-radius: 1rem;
+}
+.user-comment-lists .comment-box.active{
+  display: block;
+}
+.comment-box form{
+  margin: 1rem;
+}
+.comment-box form 
+textarea{
+  font-size: 1.8rem;
+}
+.comment-box form .send-btn{
+margin-top: 1.5rem;
+padding: 1.3rem;
+border: none;
+background-color:#df7861;
+color: var(--light-color);
+font-size: 1.5rem;
+border-radius: 1rem;
+}
+
 .user-like-tab .user-name-group
 .user-name-item{
 padding-left: 1.3rem;

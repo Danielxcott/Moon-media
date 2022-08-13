@@ -40,8 +40,9 @@ $("#cover-icon").click(function(){
 })
 
 $(".close-btn").click(function(){
-    $(".post-tab .post-detail .close-btn").toggleClass("active");
-    $(".post-tab .post-detail .all-reaction").toggleClass("active");
+    $(".post-tab .post-detail .close-btn").removeClass("active");
+    $(".post-tab .post-detail .all-reaction").removeClass("active");
+    $(".all-comment").removeClass("active");
 })
 $(".like-btn").click(function(){
     $(".post-tab .post-detail .all-reaction").toggleClass("active");
@@ -52,3 +53,11 @@ $("#dot").click(function(){
     $(".dropbox-list .dropbox-card").toggleClass("active");
 })
 
+$(".comment-btn").click(function(){
+    $(".all-comment").toggleClass("active");
+    $(".post-tab .post-detail .close-btn").toggleClass("active");
+})
+
+$("#write-comment").click(function(){
+    $(".user-comment-lists .comment-box").toggleClass("active");
+})

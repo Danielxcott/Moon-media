@@ -267,80 +267,82 @@
                     </div>
                     <div class="form-group">
                         <div class="form-item">
-                            <div class="form-icon" id="magic-wand">
-                                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            </div>
                             <div class="form-input">
-                            <label for="profile_img">Profile Image</label>
+                            <label for="profile_img"> 
+                            <i class="fa-solid fa-wand-magic-sparkles" id="magic-wand"></i>
+                                Profile Image</label>
                             <input type="file" required name="profile_img" id="profile_img" class="form-control d-none">
                             </div>
                         </div>
                         <div class="form-item">
-                            <div class="form-icon" id="cover-icon">
-                                <i class="fa-solid fa-mountain-sun"></i>
-                            </div>
                             <div class="form-input">
-                            <label for="cover_img">Cover Image</label>
+                            <label for="cover_img">
+                                <i class="fa-solid fa-mountain-sun" id="cover-icon"></i>
+                                Cover Image</label>
                             <input type="file" required name="cover_img" id="cover_img" class="form-control d-none">
                             </div>
                         </div>
                     </div>
                             <div class="form-group">
                                 <div class="form-item">
-                                    <div class="form-icon">
-                                        <i class="bi bi-at"></i>
-                                    </div>
                                     <div class="form-input">
-                                    <label for="username">Username</label>
+                                    <label for="username">
+                                        <i class="bi bi-at"></i>
+                                        Username
+                                    </label>
                                     <input type="text" required name="username" id="username" class="form-control ">
                                     </div>
                                 </div>
                                 <div class="form-item">
-                                    <div class="form-icon">
-                                        <i class="fas fa-user"></i>
-                                    </div>
                                     <div class="form-input">
-                                    <label for="name">Name</label>
+                                    <label for="name">
+                                        <i class="fas fa-user"></i>
+                                        Name
+                                    </label>
                                     <input type="text" required name="name" id="name" class="form-control">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-item">
-                                    <div class="form-icon">
-                                        <i class="bi bi-envelope-fill"></i>
-                                    </div>
                                     <div class="form-input">
-                                    <label for="email">Email</label>
+                                    <label for="email">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        Email
+                                    </label>
                                     <input type="email" required name="email" id="email" class="form-control ">
                                     </div>
                                 </div>
                                 <div class="form-item">
-                                    <div class="form-icon">
-                                        <i class="bi bi-phone-fill"></i>
-                                    </div>
                                     <div class="form-input">
-                                    <label for="mobile">Mobile</label>
+                                    <label for="mobile">
+                                        <i class="bi bi-phone-fill"></i>
+                                        Mobile
+                                    </label>
                                     <input type="number" required name="mobile" id="mobile" class="form-control">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-item">
-                                    <div class="form-icon">
-                                        <i class="bi bi-stars text-warning"></i>
-                                    </div>
                                     <div class="form-input">
-                                    <label for="role">Role</label>
-                                    <input type="text" required name="role" id="role" class="form-control">
+                                    <label for="role">
+                                        <i class="bi bi-stars"></i>
+                                        Role
+                                    </label>
+                                   <select name="" class="form-control form-select" id="">
+                                    <option  selected disabled>Select your role</option>
+                                    <option value="0">Admin</option>
+                                    <option value="1">User</option>
+                                   </select>
                                     </div>
                                 </div>
                                 <div class="form-item">
-                                    <div class="form-icon">
-                                        <i class="bi bi-house-fill"></i>
-                                    </div>
                                     <div class="form-input">
-                                    <label for="address">Address</label>
+                                    <label for="address">
+                                        <i class="bi bi-house-fill"></i>
+                                        Address
+                                    </label>
                                     <textarea required name="address" id="" cols="30" class="form-control"></textarea>
                                     </div>
                                 </div>
@@ -405,7 +407,7 @@
                                     </div>
                                     <div class="post-comment">
                                         <a href=""><i class="fa-solid fa-comment"></i></a>
-                                        <span>4 comments</span>
+                                        <span class="comment-btn">4 comments</span>
                                     </div>
                                 </div>
                                 <div class="all-reaction">
@@ -442,6 +444,60 @@
                                             </div>
                                         </div>
 
+                                    </div>
+                                </div>
+                                <div class="all-comment">
+                                    <div class="header">
+                                        <h4 class="mb-0 text-center">Comments</h4>
+                                        <i class="fas fa-edit" id="write-comment"></i>
+                                    </div>
+                                    <div class="user-comment-lists">
+                                        <div class="user-comment-tab mb-3">
+                                            <div class="user-name-group">
+                                                <img src="../../assets/img/user/Upstream-2.png" alt="">
+                                                <div class="user-name-item d-flex justify-content-between w-100">
+                                                    <div class="name-group">
+                                                        <h3>Taylor</h3>
+                                                        <small>@taylor</small>
+                                                    </div>
+                                                    <button class="trash-btn"><i class="fas fa-trash"></i></button>
+                                                </div>
+                                            </div>
+                                            <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa.</p>
+                                        </div>
+                                        <div class="user-comment-tab mb-3">
+                                            <div class="user-name-group">
+                                                <img src="../../assets/img/user/Upstream-2.png" alt="">
+                                                <div class="user-name-item d-flex justify-content-between w-100">
+                                                    <div class="name-group">
+                                                        <h3>Taylor</h3>
+                                                        <small>@taylor</small>
+                                                    </div>
+                                                    <button class="trash-btn"><i class="fas fa-trash"></i></button>
+                                                </div>
+                                            </div>
+                                            <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa.</p>
+                                        </div>
+                                        <div class="user-comment-tab mb-3">
+                                            <div class="user-name-group">
+                                                <img src="../../assets/img/user/Upstream-2.png" alt="">
+                                                <div class="user-name-item d-flex justify-content-between w-100">
+                                                    <div class="name-group">
+                                                        <h3>Taylor</h3>
+                                                        <small>@taylor</small>
+                                                    </div>
+                                                    <button class="trash-btn"><i class="fas fa-trash"></i></button>
+                                                </div>
+                                            </div>
+                                            <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa.</p>
+                                        </div>
+                                        <div class="comment-box">
+                                            <form action="">
+                                                <input type="hidden" name="">
+                                                <textarea name="comment" placeholder="write a comment..." class="form-control" id="" cols="30" rows="2"></textarea>
+                                                <button type="submit" class="send-btn" >Done</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
