@@ -320,6 +320,14 @@ line.is-invalid{
         padding: 1.2rem 6.5rem;
     }
 } */
+@media screen and (width:1366px){
+    .login-form{
+        height: auto;
+    }
+    .login-left {
+        height: 62vh;
+    }
+}
 @media screen and (width:1180px){
     .choose-options button a:last-child{
         display: none;
