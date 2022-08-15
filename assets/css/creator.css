@@ -95,6 +95,22 @@
   .post-create-submit{
     padding-bottom:0;
   }
+  /*Post detail page*/
+  .post-detail-tab{
+    padding: 0;
+    background-color: transparent;
+  }
+  .report-btn{
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    color: var(--offline-color);
+    text-decoration: none;
+    outline: none;
+  }
+  .report-btn:hover{
+    color: var(--like-color);
+    outline: none;
+  }
 
   /*Category Create page*/
   .category-list-content{
@@ -139,11 +155,22 @@ tbody tr>td:last-child{
       flex-direction: column-reverse;
   }
   }
+  @media screen and (max-width:844px)
+  {
+   /*Post detail page*/
+   .post-detail-tab{
+    padding-top: 2rem ;
+  } 
+  }
   @media screen and (max-width:450px)
   {
     /*Create post page*/
     .post-create-item{
         flex: 1 0 20rem;
+    }
+    /*Post detail page*/
+    .post-detail-tab{
+      padding-top: 2rem ;
     }
     /*Category page*/
     .category-list-content{
