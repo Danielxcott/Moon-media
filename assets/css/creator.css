@@ -1,0 +1,102 @@
+.post-create-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.4rem;
+  }
+  .breadcrumb-nav{
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 1.3rem;
+  }
+  .back-route a{
+    color: var(--offline-color);
+    margin-bottom: 0;
+  }
+  .current-route,
+  .back-route{
+    margin-bottom: 0;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+  }
+  .current-route{
+    color: #001e6c;
+    font-weight: 600;
+  }
+  .post-create-card{
+    padding: 2.5rem;
+    margin-top: 1.4rem;
+    background-color: var(--light-color);
+    border-radius: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  }
+  .post-create-card .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+  }
+  .post-create-card .header h4{
+    margin-bottom: 0;
+  }
+  .post-create-card .header button{
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    background-color: var(--offline-color);
+    transition: 0.4s;
+  }
+  .post-create-card .header button:hover{
+    background-color: #002595;
+  }
+  .post-create-card .header button a{
+    color: var(--light-color);
+  }
+  .post-create-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .post-create-item{
+    flex: 1 0 40rem;
+    padding: 2rem;
+  }
+  .post-create-item label{
+    font-size: 1.6rem;
+  }
+  .post-create-item .form-control{
+    line-height: 2.5;
+    border-radius: 0.8rem;
+    background-color: #f9f9f9;
+    font-size: 1.4rem;
+    outline: none;
+  }
+  .post-create-item button{
+    padding: 1.2rem 2rem;
+    border-radius: 0.8rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    background-color: var(--offline-color);
+    transition: 0.4s;
+    color: var(--light-color);
+    font-size: 1.3rem;
+    transition: 0.4s;
+  }
+  .post-create-item button:hover{
+    transform: scale(1.03);
+    background-color: var(--paragraph-color);
+    color: var(--light-color);
+  }
+  .post-create-submit{
+    padding-bottom:0;
+  }
+
+  @media screen and (max-width:450px)
+  {
+    .post-create-item{
+        flex: 1 0 20rem;
+    }
+  }
