@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Post</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+    <!--Icon-->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!--Core Css File-->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">
+    <!--CSS File-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/creator.css">
+</head>
+<body>
+    <!--Aside start-->
+    <aside>
+        <div class="nav-close"></div>
+        <div class="sidebar-head">
+            <div class="logo-content">
+                <img src="/assets/img/favicon.png" alt="">
+                <h4 class="mb-0">M<span><span>O</span>O</span>N</h4>
+            </div>
+            <i class="fa-solid fa-angle-right" id="back-btn"></i>
+        </div>
+            <ul class="nav-list p-0">
+                <li class="sidebar-item" >
+                    <a href="/dashboard.html" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-home"></i>
+                            <span class="sidebar-link-text">Dashboard</span>
+                        </div>
+                </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="/views/dashboard/add-post.html" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            <span class="sidebar-link-text">Create Post</span>
+                        </div>
+                    </a>
+                </li>
+                <li  class="sidebar-item">
+                    <a href="/views/dashboard/add-category.html" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-list-ul"></i>
+                            <span class="sidebar-link-text">Create Category</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-comments"></i>
+                            <span class="sidebar-link-text">Comments</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <span class="sidebar-link-text">New User Request</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="sidebar-link-text">All Users</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="" class="sidebar-link">
+                        <div class="link-items">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span class="sidebar-link-text">User Report</span>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        <div class="sidenav-footer">
+            <ul class="sidebar-nav p-0">
+                <li class="sidebar-item">
+                    <a href="/views/dashboard/login.html" class="sidebar-link">
+                        <div class="link-items">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <span class="sidebar-link-text">Logout</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!--Aside end-->
+    <!--Main content-->
+    <main>
+        <!--Navbar start-->
+        <div class="nav">
+            <div class="burger-nav">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="burger-mobile" onclick="change()">
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+            </div>
+            <div class="navitem-box">
+                <div class="search-box">
+                    <div class="form-groups">
+                        <form action="">
+                            <input type="search" class="form-controls" placeholder="Search">
+                        </form>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="noti-group">
+                    <div class="noti-bell">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="noti-status"></div>
+                </div>
+                <div class="profile-group" id="dropbox-btn">
+                        <div class="profile">
+                            <div class="profile-name">
+                                <p class="mb-0">Lucien</p>
+                                <span class="text-black-50">Admin</span>
+                            </div>
+                            <img src="/assets/img/user/Upstream-1.png" class="user-profile" alt="">
+                        </div>
+                    <div class="active-status">
+                        <div class="online"></div>
+                        <!-- <div class="offline"></div> -->
+                    </div>
+                    <div class="profile-dropbox">
+                        <ul class="dropbox-list p-0">
+                            <li class="drop-list-item">
+                                <a href="/views/dashboard/profile.html">
+                                    <i class="fas fa-user"></i>
+                                    <span class="ms-3">Profile</span>
+                                </a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a href="/views/dashboard/login.html">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <span class="ms-3">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--Navbar end-->
+        <!--Content section-->
+        <section class="post-create-container">
+            <div class="post-create-content">
+                <div class="breadcrumb-nav">
+                   <h5 class="back-route"><a href="/dashboard.html">Dashboard</a></h5>
+                   <i class="fas fa-chevron-right"></i>
+                   <h5 class="current-route">User Request</h5>
+                </div>
+                <div class="post-create-card">
+                    <div class="header">
+                        <h4>User Request</h4>
+                    </div>
+                    <div class="post-create-card-body">
+                        <table class="table table-bordered overflow-scroll">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Profile</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Action</th>
+                                    <th>Created At</th>
+                                    <th>Updated At</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img class="user_profile_img" src="/assets/img/user/Teamwork-5.png" alt=""></td>
+                                    <td>Daniel</td>
+                                    <td>example@gmail.com</td>
+                                    <td>user</td>
+                                    <td class="action">
+                                        <a href="/views/dashboard/post-detail.html" class="btn btn-outline-primary">Confirm</a>
+                                        <a href="" class="btn btn-outline-danger">Cancel</a>
+                                    </td>
+                                    <td>12Aug 2022</td>
+                                    <td>14Aug 2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Content section-->
+    </main>
+     <!--Main content-->
+    <!--Noti-bar-->
+    <nav class="noti-nav">
+        <div class="noti-close"></div>
+        <ul class="noti-list">
+            <li class="noti-wrapper">
+                <a href="" class="noti-link">
+                    <div class="noti-item">
+                        <img src="/assets/img/user/Teamwork-7.png" alt="">
+                        <div class="noti-title">
+                            <h3>Thomas</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mole ...</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="noti-wrapper">
+                <a href="" class="noti-link">
+                    <div class="noti-item">
+                        <img src="/assets/img/user/Teamwork-3.png" alt="">
+                        <div class="noti-title">
+                            <h3>Andrea</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mole ...</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="noti-wrapper">
+                <a href="" class="noti-link">
+                    <div class="noti-item">
+                        <img src="/assets/img/user/Teamwork-4.png" alt="">
+                        <div class="noti-title">
+                            <h3>Taylor</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mole ...</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Noti-bar end-->
+    <!--Core Js File-->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
+</body>
+</html>

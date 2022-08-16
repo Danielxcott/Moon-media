@@ -159,7 +159,7 @@ tbody tr>td:last-child{
 }
 .action a,
 .action form>button{
-  width: 5rem;
+  width: auto;
   text-align: center;
   line-height: 3rem;
   font-size: 1.3rem;
