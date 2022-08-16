@@ -121,6 +121,9 @@
     background-color: var(--light-color);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   }
+  input[type="color"]{
+    width: 5rem;
+  }
   .category-chart,
   .category-table{
     flex: 1 0 40rem;
@@ -131,6 +134,9 @@
   }
 .category-header{
     padding: 2rem;
+}
+tr th{
+  text-align: center;
 }
 tr{
     font-size: 1.4rem;
@@ -153,6 +159,13 @@ tbody tr>td:last-child{
 }
 .feature_img{
   width: 10rem;
+}
+.icon-action a,
+.icon-action form>button{
+  width: 5rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.3rem;
 }
 .action{
   white-space: nowrap;
