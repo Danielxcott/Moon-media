@@ -144,10 +144,29 @@ tbody tr>td:last-child{
 }
 .post-create-card-body{
   overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   padding: 2rem 0;
+}
+.post-create-card-body::-webkit-scrollbar{
+  display: none;
 }
 .feature_img{
   width: 10rem;
+}
+.action a,
+.action form>button{
+  width: 5rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.3rem;
+}
+/*All Users page*/
+.user_profile_img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
 }
   /*Responsive*/
   @media screen and (max-width:1024px){
