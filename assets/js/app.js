@@ -161,3 +161,11 @@ function weatherDetails(info)
 
 requestApi();
 
+//Quote generator
+const getQuote = async () =>{
+    const data = await fetch(`https://api.quotable.io/random`);
+    const result = await data.json();
+    console.log(result);
+    $(".quote-text .paragraph").text(result.content);
+  }
+  getQuote();

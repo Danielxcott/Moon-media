@@ -154,12 +154,18 @@ tbody tr>td:last-child{
 .feature_img{
   width: 10rem;
 }
+.action{
+  white-space: nowrap;
+}
 .action a,
 .action form>button{
   width: 5rem;
   text-align: center;
   line-height: 3rem;
   font-size: 1.3rem;
+}
+.article{
+  text-align: left;
 }
 /*All Users page*/
 .user_profile_img{
