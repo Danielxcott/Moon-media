@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON</title>
+    <!--Core Css-->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <!--Nav start-->
+    <nav>
+        <h3 class="nav-title mb-0">
+            <a href="">MOON</a>
+        </h3>
+        <div class="nav-items">
+            <div class="search-box">
+                <form action="" id="search-btn">
+                    <input type="search" placeholder="search" class="input-box">
+                </form>
+                <button type="button" class="search-btn" form="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="user-profile">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                    <div class="active-status"></div>
+                    <div class="offline-status d-none"></div>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav end-->
+    <!--Content start-->
+    <div class="content-aside">
+        <div class="followers">
+            <h3 class="mb-0">Your Followers</h3>
+            <div class="follower-lists">
+                <div class="follower-item">
+                    <div class="follower-user-profile">
+                    <a href="">
+                    <img src="/assets/img/user/Teamwork-5.png" alt="">
+                    <span class="user-name">Thomas</span>
+                    </a>
+                    <div class="active-status"></div>
+                    </div>
+                    <button><a href="">Following</a></button>
+                </div>
+                <div class="follower-item">
+                    <div class="follower-user-profile">
+                    <a href="">
+                    <img src="/assets/img/user/Teamwork-3.png" alt="">
+                    <span class="user-name">Lucifer</span>
+                    </a>
+                    <div class="active-status"></div>
+                    </div>
+                    <button><a href="">Following</a></button>
+                </div>
+                <div class="follower-item">
+                    <div class="follower-user-profile">
+                    <a href="">
+                    <img src="/assets/img/user/Teamwork-2.png" alt="">
+                    <span class="user-name">Sebastian</span>
+                    </a>
+                    <div class="active-status"></div>
+                    </div>
+                    <button><a href="">Following</a></button>
+                </div>
+                <div class="follower-item">
+                    <div class="follower-user-profile">
+                    <a href="">
+                    <img src="/assets/img/user/Teamwork-1.png" alt="">
+                    <span class="user-name">Luke</span>
+                    </a>
+                    <div class="active-status"></div>
+                    </div>
+                    <button><a href="">Following</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="suggest-options">
+            <div class="categories">
+                <h3>Recommended Topics</h3>
+                <div class="category-lists">
+                    <div class="category-item">
+                        <a href="">Education</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">Art</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">News</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">Graphic Design</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">Business</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main-content">
+       <div class="user-wrapper">
+        <h3 class="mb-0">Who to follow</h3>
+        <div class="newuser-lists">
+            <div class="newuser-item">
+                <div class="newuser-content">
+                    <img src="/assets/img/user/Teamwork-8.png" alt="">
+                    <div class="user-name">
+                        <a href="">
+                            <p class="mb-0">Vincent</p>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                        </span>
+                        </a>
+                    </div>
+                </div>
+                <button class="newuser-btn"><a href="">Follow</a></button>
+            </div>
+            <div class="newuser-item">
+                <div class="newuser-content">
+                    <img src="/assets/img/user/Teamwork-6.png" alt="">
+                    <div class="user-name">
+                        <a href="">
+                            <p class="mb-0">Emelie</p>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                        </span>
+                        </a>
+                    </div>
+                </div>
+                <button class="newuser-btn"><a href="">Follow</a></button>
+            </div>
+            <div class="newuser-item">
+                <div class="newuser-content">
+                    <img src="/assets/img/user/Teamwork-2.png" alt="">
+                    <div class="user-name">
+                        <a href="">
+                            <p class="mb-0">Joseph</p>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                        </span>
+                        </a>
+                    </div>
+                </div>
+                <button class="newuser-btn"><a href="">Follow</a></button>
+            </div>
+            <div class="newuser-item">
+                <div class="newuser-content">
+                    <img src="/assets/img/user/Teamwork-4.png" alt="">
+                    <div class="user-name">
+                        <a href="">
+                            <p class="mb-0">Hailey</p>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat?
+                        </span>
+                        </a>
+                    </div>
+                </div>
+                <button class="newuser-btn"><a href="">Request</a></button>
+            </div>
+        </div>
+       </div>
+        <div class="nav-menu">
+            <div class="nav-content">
+                <div class="toggle-btn">
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+                <span style="--i:1;">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                </span>
+                <span style="--i:2;">
+                    <a href=""><i class="fas fa-paragraph"></i></a>
+                </span>
+                <span style="--i:3;" class="category-btn">
+                    <a href=""><i class="fas fa-align-left"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!--Content end-->
+    <!--Core Js File-->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- <div class="category-lists">
+            <div class="category-items" ><a href="">News</a></div>
+            <div class="category-items" ><a href="">Science</a></div>
+            <div class="category-items" ><a href="">Technology</a></div>
+            <div class="category-items" ><a href="">Fashion</a></div>
+            <div class="category-items" ><a href="">Art</a></div>
+        </div> -->
