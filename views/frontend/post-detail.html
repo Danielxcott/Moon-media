@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON</title>
+    <!--Core Css-->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <!--Nav start-->
+    <nav>
+        <h3 class="nav-title mb-0">
+            <a href="">MOON</a>
+        </h3>
+        <div class="nav-items">
+            <div class="search-box">
+                <form action="" id="search-btn">
+                    <input type="search" placeholder="search" class="input-box">
+                </form>
+                <button type="button" class="search-btn" form="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="user-profile">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                    <div class="active-status"></div>
+                    <div class="offline-status d-none"></div>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav end-->
+    <!--Content start-->
+    <div class="content-aside">
+        <div class="related-post">
+            <h3 class="mb-0">Related Posts</h3>
+            <div class="related-post-lists">
+                <div class="related-post-item">
+                    <div class="related-post-owner">
+                        <div class="user-name">
+                            <img src="/assets/img/user/Teamwork-6.png" alt="">
+                            <span><a href="">Lucifer</a></span>
+                        </div>
+                        <a href="" class="related-post-link">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, dignissimos.
+                        </p>
+                        </a>
+                    </div>
+                    <a href="" class="related-post-img">
+                    <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="related-post-item">
+                    <div class="related-post-owner">
+                        <div class="user-name">
+                            <img src="/assets/img/user/Teamwork-6.png" alt="">
+                            <span><a href="">Lucifer</a></span>
+                        </div>
+                        <a href="" class="related-post-link">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, dignissimos.
+                        </p>
+                        </a>
+                    </div>
+                    <a href="" class="related-post-img">
+                    <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="related-post-item">
+                    <div class="related-post-owner">
+                        <div class="user-name">
+                            <img src="/assets/img/user/Teamwork-6.png" alt="">
+                            <span><a href="">Lucifer</a></span>
+                        </div>
+                        <a href="" class="related-post-link">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, dignissimos.
+                        </p>
+                        </a>
+                    </div>
+                    <a href="" class="related-post-img">
+                    <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="suggest-options">
+            <div class="categories">
+                <h3>Recommended Topics</h3>
+                <div class="category-lists">
+                    <div class="category-item">
+                        <a href="">Education</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">Art</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">News</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">Graphic Design</a>
+                    </div>
+                    <div class="category-item">
+                        <a href="">Business</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="article-content">
+        <div class="article-card">
+            <div class="article-wrapper">
+                <div class="article-owner">
+                    <div class="article-owner-item">
+                        <img src="/assets/img/user/Teamwork-4.png" alt="">
+                        <div class="article-owner-name">
+                            <p><a href="">Hailey</a></p>
+                            <small class="article-category"><a href="">News</a></small>
+                            <small class="article-created">4 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn dot-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <i class="fas fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                          <li class="dropdown-item">
+                            <div class="btn-group">
+                            <button class="btn report-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                Report
+                            </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Spam</a></li>
+                                  <li><a class="dropdown-item" href="#">Harassment</a></li>
+                                  <li><a class="dropdown-item" href="">False Information</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="article-detail-wrapper">
+                    <div class="article-detail-item">
+                        <h3>Hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                        <img src="/assets/img/posts/post1.jpeg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit distinctio beatae molestiae? Laudantium veritatis tenetur inventore recusandae quasi esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quisquam natus sed laboriosam dolores possimus corrupti ad, aliquid impedit itaque voluptatem, ipsum numquam, assumenda temporibus corporis doloremque asperiores perspiciatis ut fuga? Accusamus doloribus odit, consectetur aperiam tempora ipsam, laudantium deleniti dolorem, amet rerum corrupti nam! Excepturi rerum blanditiis dolorum nihil?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit distinctio beatae molestiae? Laudantium veritatis tenetur inventore recusandae quasi esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quisquam natus sed laboriosam dolores possimus corrupti ad, aliquid impedit itaque voluptatem, ipsum numquam, assumenda temporibus corporis doloremque asperiores perspiciatis ut fuga? Accusamus doloribus odit, consectetur aperiam tempora ipsam, laudantium deleniti dolorem, amet rerum corrupti nam! Excepturi rerum blanditiis dolorum nihil?</p>
+                    </div>
+                    <div class="article-detail-controller">
+                        <div class="reaction-controller">
+                            <div class="reaction">
+                                <a href="">                            
+                                    <i class="bi bi-heart-fill"></i>
+                                </a>
+                                    <span onclick="viewerBtn(1)" class="reaction-count">30</span>
+                            </div>
+                            <div class="comment" id="commentBtn1" onclick="commentBtn(1)">
+                                <i class="bi bi-chat-right-quote-fill"></i>   
+                                <span class="message-count">5</span>                     
+                            </div>
+                        </div>
+                        <div class="article-controller-item">
+                            <a href="" class="left-control"><i class="bi bi-arrow-left-circle"></i></a>
+                            <a href="/index.html" class="read-all">Read all</a>
+                            <a href="" class="right-control"><i class="bi bi-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-content">
+                <div class="toggle-btn">
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+                <span style="--i:1;">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                </span>
+                <span style="--i:2;">
+                    <a href=""><i class="fas fa-paragraph"></i></a>
+                </span>
+                <span style="--i:3;" class="category-btn">
+                    <a href=""><i class="fas fa-align-left"></i></a>
+                </span>
+            </div>
+        </div>
+        <section class="right-aside d-none">
+            <div class="suggest-post">
+                <h3>Suggestion Posts</h3>
+                <div class="suggest-post-lists">
+                    <div class="suggest-post-item">
+                        <div class="suggest-post-owner">
+                            <a href="">
+                            <img src="/assets/img/user/Teamwork-8.png" alt="">
+                            <span>Blake</span>
+                            </a>
+                        </div>
+                        <div class="suggest-post-link">
+                            <a href="">
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="suggest-post-item">
+                        <div class="suggest-post-owner">
+                            <a href="">
+                            <img src="/assets/img/user/Teamwork-8.png" alt="">
+                            <span>Blake</span>
+                            </a>
+                        </div>
+                        <div class="suggest-post-link">
+                            <a href="">
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="suggest-post-item">
+                        <div class="suggest-post-owner">
+                            <a href="">
+                            <img src="/assets/img/user/Teamwork-8.png" alt="">
+                            <span>Blake</span>
+                            </a>
+                        </div>
+                        <div class="suggest-post-link">
+                            <a href="">
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="suggest-post-item">
+                        <div class="suggest-post-owner">
+                            <a href="">
+                            <img src="/assets/img/user/Teamwork-8.png" alt="">
+                            <span>Blake</span>
+                            </a>
+                        </div>
+                        <div class="suggest-post-link">
+                            <a href="">
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <!--Reaction viewers-->
+    <div class="reaction-viewers" id="viewers1">
+        <div class="reaction-viewers-close" id="viewerClose1" onclick="closeReaction(1)"></div>
+        <div class="reaction-viewers-wrapper">
+            <div class="reaction-viewer-title">
+                <p>You got <span>30</span> loves for <span>"Hello Lorem ipsum dolor sit amet..."</span> </p>
+                <button onclick="closeReaction(1)"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="reaction-viewers-lists">
+                <div class="reaction-viewers-item">
+                    <div class="reaction-viewer-name">
+                        <img src="/assets/img/user/Teamwork-8.png" alt="">
+                        <span><a href="">Vincent</a></span>
+                    </div>
+                    <button class="reactor-follower"><a href="">Follow</a></button>
+                </div>
+                <div class="reaction-viewers-item">
+                    <div class="reaction-viewer-name">
+                        <img src="/assets/img/user/Teamwork-8.png" alt="">
+                        <span><a href="">Vincent</a></span>
+                    </div>
+                    <button class="reactor-follower"><a href="">Follow</a></button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!--Comment-aside-->
+    <div class="comment-asidenav">
+        <div class="comment-aside-close"></div>
+            <div class="comment-header">
+                <h3>Comments(5)</h3>
+                <button class="close-com-btn"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="comment-card">
+                <div class="comment-owner">
+                    <img src="/assets/img/user/Upstream-1.png" alt="">
+                    <span>Lucien</span>
+                </div>
+                <form action="" class="comment-box">
+                    <textarea name="" id="" class="form-control comment-input" placeholder="what are your thoughts?" cols="30" rows="5"></textarea>
+                    <button>Response</button>
+                </form>
+            </div>
+        <ul class="comment-lists">
+            <li class="comment-item">
+                <div class="user-item-group">
+                    <img src="/assets/img/user/Teamwork-7.png" alt="">
+                    <div class="user-name">
+                        <a href=""><p>Luke</p></a>
+                        <span>4 mins ago</span>
+                    </div>
+                </div>
+                <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quam enim totam iure repudiandae corporis iusto qui quae! Non, vero.</p>
+                <div class="comment-controller">
+                    <span></span>
+                    <span class="reply-btn">reply</span>
+                </div>
+                <div class="divider-line"></div>
+            </li>
+            <li class="comment-item">
+                <div class="user-item-group">
+                    <img src="/assets/img/user/Teamwork-7.png" alt="">
+                    <div class="user-name">
+                        <a href=""><p>Luke</p></a>
+                        <span>4 mins ago</span>
+                    </div>
+                </div>
+                <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quam enim totam iure repudiandae corporis iusto qui quae! Non, vero.</p>
+                <div class="divider-line"></div>
+            </li>
+            <li class="comment-item">
+                <div class="user-item-group">
+                    <img src="/assets/img/user/Teamwork-7.png" alt="">
+                    <div class="user-name">
+                        <a href=""><p>Luke</p></a>
+                        <span>4 mins ago</span>
+                    </div>
+                </div>
+                <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quam enim totam iure repudiandae corporis iusto qui quae! Non, vero.</p>
+                <div class="divider-line"></div>
+            </li>
+        </ul>
+    </div>
+    
+    <!--Content end-->
+    <!--Core Js File-->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
