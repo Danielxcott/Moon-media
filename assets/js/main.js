@@ -1,3 +1,4 @@
+
 $(".search-btn").click(function(){
     $(".input-box").toggleClass("active");
 });
@@ -40,5 +41,26 @@ function closeReaction(x)
     closeBtn.removeClass("active");
 }
 
-const exampleEl = document.getElementById('slug')
-const tooltip = new bootstrap.Tooltip(exampleEl)
+try{
+    const exampleEl = document.getElementById('slug')
+    const tooltip = new bootstrap.Tooltip(exampleEl);
+}catch(error){
+    console.log(error.message);
+}
+
+$(".edit-cover-photo").delegate(".edit-cover-btn","click",function(){
+    let x = $(this).parent().find("#cover-input");
+   $(this).parent().find("#cover-input").click();
+   if(x !== "")
+   {
+    $(".current-img-extension").text(x.val());
+   }else
+   {
+    $(".current-img-extension").text(x.val());
+   }
+})
+
+$(".edit-profile-photo").delegate(".edit-profile-btn","click",function(){
+    let x = $(this).parent().find("#profile-input");
+   $(this).parent().find("#profile-input").click();
+})

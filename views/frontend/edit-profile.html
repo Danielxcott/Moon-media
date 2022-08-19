@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON</title>
+    <!--Core Css-->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <!--Nav start-->
+    <nav>
+        <h3 class="nav-title mb-0">
+            <a href="">MOON</a>
+        </h3>
+        <div class="nav-items">
+            <div class="search-box">
+                <form action="" id="search-btn">
+                    <input type="search" placeholder="search" class="input-box">
+                </form>
+                <button type="button" class="search-btn" form="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="/index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="">
+                    <i class="fas fa-paragraph"></i>
+                </a>
+            </button>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="/views/frontend/user-search.html">
+                    <i class="fas fa-users"></i>
+                </a>
+            </button>
+            <div class="user-profile">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                    <div class="active-status"></div>
+                    <div class="offline-status d-none"></div>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="/views/dashboard/login.html">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav end-->
+    <!--Content start-->
+    <section class="profile-content create-form-wrapper">
+        <form action="" id="edit-profile"></form>
+        <div class="profile-card">
+            <div class="profile-cover edit-profile-cover">
+                <img src="../../assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                <div class="edit-cover-photo">
+                    <input type="file"  id="cover-input" value="f68acc1ec6b3067888ad0f6c52ef275d.png" name="cover_img" form="edit-profile" class="d-none">
+                    <div class="edit-cover-btn">
+                        <i class="fa-solid fa-pen-to-square"></i>                
+                        <small>Edit cover photo <span class="current-img-extension"></span></small>
+                    </div>
+                </div>
+                <div class="error-cover-message">
+                    <small>The file extension you use is not support!!</small>
+                </div>
+            </div>
+            <div class="profile-head">
+                <div class="profile-pic edit-profile-pic">
+                    <img src="../../assets/img/user/Upstream-1.png" alt="">
+                    <div class="edit-profile-photo">
+                        <input type="file"  id="profile-input" value="" name="profile_img" form="edit-profile" class="d-none">
+                        <div class="edit-profile-btn">
+                            <i class="fa-solid fa-pen-to-square"></i>                
+                            <small>Edit profile photo</small>
+                        </div>
+                    </div>
+                    <div class="error-profile-message">
+                        <small>The file extension you use is not support!!</small>
+                    </div>
+                </div>
+                <div class="profile-name-group">
+                    <div class="profile-name">
+                        <div class="profile-edit-item">
+                            <label for="">Name</label>
+                            <input type="name" name="name" required class="form-control" form="edit-profile" value="Lucien">
+                        </div>
+                        <div class="profile-edit-item">
+                            <label for="">Username</label>
+                            <input type="text" name="username" required class="form-control" form="edit-profile" value="lucien">
+                        </div>
+                    </div>
+                    <div class="profile-follower-item">
+                        <button form="edit-profile" class="update-profile-btn" type="submit">Update</button>
+                        <button><a href="/views/frontend/profile.html">Cancel</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-edit-wrapper">
+                <div class="profile-edit-item">
+                    <label for="">Email</label>
+                    <input type="email" name="email" required class="form-control" form="edit-profile" value="">
+                </div>
+                <div class="profile-edit-item">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required class="form-control" form="edit-profile" value="">
+                </div>
+                <div class="profile-edit-item">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" form="edit-profile" class="form-select">
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                </div>
+                <div class="profile-edit-item">
+                    <label for="live_in">Live in</label>
+                    <input type="text" id="live_in" name="live_in" required class="form-control" form="edit-profile" value="">
+                </div>
+                <div class="profile-edit-item">
+                    <label for="mobile">Mobile</label>
+                    <input type="number" required name="mobile" class="form-control" form="edit-profile" value="">
+                </div>
+                <div class="profile-edit-item">
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio" cols="30" form="edit-profile" class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+           </div>
+        <div class="nav-menu">
+            <div class="nav-content">
+                <div class="toggle-btn">
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+                <span style="--i:1;">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                </span>
+                <span style="--i:2;">
+                    <a href=""><i class="fas fa-paragraph"></i></a>
+                </span>
+                <span style="--i:3;" class="category-btn">
+                    <a href=""><i class="fas fa-align-left"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!--Content end-->
+    <!--Core Js File-->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
