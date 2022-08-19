@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON</title>
+    <!--Core Css-->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <!--Nav start-->
+    <nav>
+        <h3 class="nav-title mb-0">
+            <a href="">MOON</a>
+        </h3>
+        <div class="nav-items">
+            <div class="search-box">
+                <form action="" id="search-btn">
+                    <input type="search" placeholder="search" class="input-box">
+                </form>
+                <button type="button" class="search-btn" form="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="/index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="">
+                    <i class="fas fa-paragraph"></i>
+                </a>
+            </button>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="/views/frontend/user-search.html">
+                    <i class="fas fa-users"></i>
+                </a>
+            </button>
+            <div class="user-profile">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                    <div class="active-status"></div>
+                    <div class="offline-status d-none"></div>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="/views/dashboard/login.html">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav end-->
+    <!--Content start-->
+    <section class="profile-content">
+        <section class="profile-card">
+            <div class="profile-cover">
+                <img src="../../assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                <div class="back-btn">
+                   <a href="../../index.html">
+                    <i class="fa-solid fa-chevron-left"></i>
+                   </a>
+                </div>
+            </div>
+            <div class="profile-head">
+                <div class="profile-pic">
+                    <img src="../../assets/img/user/Upstream-1.png" alt="">
+                </div>
+                <div class="profile-name-group">
+                    <div class="profile-name">
+                    <h4>Lucien</h4>
+                    <small>@lucien</small>
+                    </div>
+                    <div class="profile-follower-item">
+                        <button><a href="">Follow</a></button>
+                        <button><a href="">Edit Profile</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-follower-wrapper">
+                <div class="profile-follower-list">
+                    <div class="profile-follower-item">
+                        <span>3</span>
+                        <span>Posts</span>
+                    </div>
+                    <div class="profile-follower-item">
+                        <a href="">
+                            <span>12</span>
+                            <span>followers</span>
+                        </a>
+                    </div>
+                    <div class="profile-follower-item d-none">
+                        <a href="">
+                            <span>9</span>
+                            <span>Following</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-bio">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, quaerat?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo possimus dicta sapiente doloribus, necessitatibus saepe a ad ratione error ut ex, officia dolorum fugit. Sit quam error minima ipsum sed.
+                    </p>
+                </div>
+            </div>
+            <ul class="nav-tab nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Posts</button>
+                  </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">About</button>
+                </li>
+              </ul>
+           </section>
+            <section class="profile-detail">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane post-tab fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="about">
+                            <h3 class="mb-0">Your Posts</h3>
+                        </div>
+                        <div class="post-article-lists">
+                            <div class="post-article-items">
+                                <div class="content-user-group">
+                                    <div class="user-profile">
+                                       <a href="">
+                                        <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                                        <small class="user-name">
+                                            Lucien
+                                        </small>
+                                       </a>
+                                       <div class="active-status"></div>
+                                       <div class="offline-status d-none"></div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li class="dropdown-item">
+                                            <div class="btn-group">
+                                            <button class="btn report-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                Report
+                                            </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Harassment</a></li>
+                                                  <li><a class="dropdown-item" href="">False Information</a></li>
+                                                </ul>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="content-article-group owner-article-group">
+                                    <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                                    <div class="article-paragraph">
+                                        <a href="/views/frontend/post-detail.html">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tempore.</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a fugit in nulla, error hic! Amet officiis et officia voluptatum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium consectetur necessitatibus perferendis consequatur in dolorem eius laudantium voluptates, iusto, aliquid iure voluptatibus! Saepe nihil ad atque quod voluptate quo explicabo sint ipsa nesciunt molestiae omnis ea, a iure sapiente repellat! Officia saepe corporis iusto voluptates velit laboriosam assumenda, dolorum ullam!...</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content-article-footer">
+                                    <div>
+                                        <small>
+                                            <a href="">Graphic Design</a>
+                                        </small>
+                                        <small>14 minutes ago</small>
+                                    </div>
+                                </div>
+                                <div class="divider-line"></div>
+                            </div>
+                            <div class="post-article-items">
+                                <div class="content-user-group">
+                                    <div class="user-profile">
+                                       <a href="">
+                                        <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                                        <small class="user-name">
+                                            Lucien
+                                        </small>
+                                       </a>
+                                       <div class="active-status"></div>
+                                       <div class="offline-status d-none"></div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li class="dropdown-item">
+                                            <div class="btn-group">
+                                            <button class="btn report-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                Report
+                                            </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Harassment</a></li>
+                                                  <li><a class="dropdown-item" href="">False Information</a></li>
+                                                </ul>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="content-article-group owner-article-group">
+                                    <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                                    <div class="article-paragraph">
+                                        <a href="/views/frontend/post-detail.html">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tempore.</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a fugit in nulla, error hic! Amet officiis et officia voluptatum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium consectetur necessitatibus perferendis consequatur in dolorem eius laudantium voluptates, iusto, aliquid iure voluptatibus! Saepe nihil ad atque quod voluptate quo explicabo sint ipsa nesciunt molestiae omnis ea, a iure sapiente repellat! Officia saepe corporis iusto voluptates velit laboriosam assumenda, dolorum ullam!...</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content-article-footer">
+                                    <div>
+                                        <small>
+                                            <a href="">Graphic Design</a>
+                                        </small>
+                                        <small>14 minutes ago</small>
+                                    </div>
+                                </div>
+                                <div class="divider-line"></div>
+                            </div>
+                            <div class="post-article-items">
+                                <div class="content-user-group">
+                                    <div class="user-profile">
+                                       <a href="">
+                                        <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                                        <small class="user-name">
+                                            Lucien
+                                        </small>
+                                       </a>
+                                       <div class="active-status"></div>
+                                       <div class="offline-status d-none"></div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li class="dropdown-item">
+                                            <div class="btn-group">
+                                            <button class="btn report-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                Report
+                                            </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Harassment</a></li>
+                                                  <li><a class="dropdown-item" href="">False Information</a></li>
+                                                </ul>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="content-article-group owner-article-group">
+                                    <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
+                                    <div class="article-paragraph">
+                                        <a href="/views/frontend/post-detail.html">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tempore.</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a fugit in nulla, error hic! Amet officiis et officia voluptatum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium consectetur necessitatibus perferendis consequatur in dolorem eius laudantium voluptates, iusto, aliquid iure voluptatibus! Saepe nihil ad atque quod voluptate quo explicabo sint ipsa nesciunt molestiae omnis ea, a iure sapiente repellat! Officia saepe corporis iusto voluptates velit laboriosam assumenda, dolorum ullam!...</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content-article-footer">
+                                    <div>
+                                        <small>
+                                            <a href="">Graphic Design</a>
+                                        </small>
+                                        <small>14 minutes ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider-line"></div>
+                    </div>
+                    <div class="tab-pane about-tab fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="about">
+                            <h3 class="mb-0">About</h3>
+                        </div>
+                        <div class="about-group">
+                            <div class="group-item">
+                                <div>
+                                    <i class="bi bi-at"></i>
+                                </div>
+                                <div>
+                                    <label>Username</label>
+                                    <h3>@lucien</h3>
+                                </div>
+                            </div>
+                            <div class="group-item">
+                                <div>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <label>Name</label>
+                                    <h3>Lucien</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-group">
+                            <div class="group-item">
+                                <div>
+                                    <i class="bi bi-house-fill"></i>
+                                </div>
+                                <div>
+                                    <label>Address</label>
+                                    <h3>36 Fishhook Ln , Reeds Spring , Mississippi</h3>
+                                </div>
+                            </div>
+                            <div class="group-item">
+                                <div>
+                                    <i class="bi bi-phone-fill"></i>
+                                </div>
+                                <div>
+                                    <label>Mobile</label>
+                                    <h3>09123123445</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-group">
+                            <div class="group-item">
+                                <div>
+                                    <i class="fa-solid fa-venus-mars"></i>
+                                </div>
+                                <div>
+                                    <label>Gender</label>
+                                    <h3>Male</h3>
+                                </div>
+                            </div>
+                            <div class="group-item">
+                                <div>
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div>
+                                    <label>Email</label>
+                                    <h3>lucien@gmail.com</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <div class="nav-menu">
+            <div class="nav-content">
+                <div class="toggle-btn">
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+                <span style="--i:1;">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                </span>
+                <span style="--i:2;">
+                    <a href=""><i class="fas fa-paragraph"></i></a>
+                </span>
+                <span style="--i:3;" class="category-btn">
+                    <a href=""><i class="fas fa-align-left"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!--Content end-->
+    <!--Core Js File-->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- <div class="category-lists">
+            <div class="category-items" ><a href="">News</a></div>
+            <div class="category-items" ><a href="">Science</a></div>
+            <div class="category-items" ><a href="">Technology</a></div>
+            <div class="category-items" ><a href="">Fashion</a></div>
+            <div class="category-items" ><a href="">Art</a></div>
+        </div> -->

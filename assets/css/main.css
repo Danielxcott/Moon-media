@@ -278,6 +278,9 @@ input[type="search"]::-webkit-search-results-decoration {
     object-fit: cover;
     border-radius: 0.8rem;
 }
+.profile-search a i{
+    font-size: 1.4rem;
+}
 .profile-search a,
 .article-paragraph a
 ,.follower-user-profile a,
@@ -298,6 +301,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 1.3rem;
     color: var(--paragraph-color);
     padding-bottom: 2rem ;
+    margin-bottom: 0;
 }
 .content-aside .followers,
 .suggest-options .categories,
@@ -338,10 +342,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .follower-item button a,
 .newuser-btn a,
-.reactor-follower a{
+.reactor-follower a,
+.profile-follower-item button a{
     text-decoration: none;
     color: var(--light-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .follower-user-profile .user-name{
     padding: 0 1.3rem;
@@ -415,6 +420,7 @@ input[type="search"]::-webkit-search-results-decoration {
     justify-content: center;
     cursor: grab;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    display: none;
 }
 .nav-menu.open .nav-content span{
     transform: rotate(calc(var(--i)*(360deg/8))) translateY(120px);
@@ -616,6 +622,7 @@ input[type="search"]::-webkit-search-results-decoration {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+.related-post-lists::-webkit-scrollbar,
 .suggest-post-lists::-webkit-scrollbar{
     display: none;
 }
@@ -623,7 +630,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .suggest-post-link a,
 .user-item-group .user-name a,
 .related-post-link,
-.reaction-viewer-name span a{
+.reaction-viewer-name span a,
+.profile-follower-item a{
     text-decoration: none;
     color: var(--paragraph-color);
 }
@@ -852,6 +860,8 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 50rem;
     padding: 1.3rem 0;
     overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .related-post-item{
     display: flex;
@@ -963,3 +973,209 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: 500;
     margin-bottom: 0;
 }
+/*Profile page*/
+/*profile card start*/
+.profile-content{
+    width: 88rem;
+    margin: auto;
+}
+.profile-card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.4rem;
+    background-color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 1.3rem;
+    overflow: hidden;
+  }
+  .profile-cover {
+    position: relative;
+  }
+  .profile-cover img {
+    width: 100%;
+    height: 23rem;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+    object-fit: cover;
+  }
+  .profile-cover .back-btn a {
+    color: var(--text-color);
+    font-size: 1.8rem;
+  }
+  .profile-cover .back-btn {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    background: #eff0f26d;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    backdrop-filter: blur(2px);
+  }
+  .profile-head {
+    display: flex;
+    padding: 1rem;
+    justify-content: end;
+    position: relative;
+  }
+  .profile-head .profile-pic {
+    position: absolute;
+    top: -57px;
+    left: 60px;
+  }
+  .profile-follower-item button{
+    border: none;
+    padding: 1.3rem 1.5rem;
+    font-size: 1.3rem;
+    background-color: #002595;
+    border-radius: 0.8rem;
+    font-weight: 500;
+  }
+.profile-follower-item button:last-child{
+    background-color: #383838;
+  }
+  .profile-follower-wrapper .profile-follower-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .profile-follower-item{
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .profile-bio{
+    padding: 1rem 17rem;
+  }
+  .profile-bio p{
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+  .profile-head .profile-pic img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .profile-name-group{
+    display: flex;
+    flex: 0 0 68rem;
+    justify-content: space-between;
+    padding: 0 1.3rem;
+  }
+  .profile-head .profile-name h4 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 0.4rem;
+  }
+  .profile-head .profile-name small {
+    font-size: 1.2rem;
+    color: var(--offline-color);
+  }
+  .nav-tab {
+    display: flex;
+    background-color: var(--light-color);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    margin: 0;
+  }
+  .nav-tab .nav-item {
+    flex: 0 0 11rem;
+  }
+  .nav-tab .nav-item button {
+    padding: 1rem;
+    width: 8rem;
+    font-size: 1.5rem;
+  }
+  .nav-tab .nav-item button.active {
+    background-color: transparent;
+    color: #df7861;
+    font-weight: 600;
+  }
+  /*profile card end*/
+  /*Profile detail start*/
+  .profile-detail {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.4rem;
+    /* height: 100vh; */
+  }
+  .about-tab,.edit-tab{
+    padding: 2.8rem;
+    background-color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 1.3rem;
+  }
+  .post-tab{
+    padding: 2.8rem;
+    background-color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 1.3rem;
+  }
+  .profile-detail .tab-content 
+  .about-tab .about {
+    margin-bottom: 1.5rem;
+  }
+  .profile-detail .tab-content 
+  .about-tab .about-group {
+    display: flex;
+  }
+  .profile-detail .tab-content 
+  .about-tab .about-group 
+  .group-item {
+    display: flex;
+    flex: 1 0 46rem;
+    align-items: center;
+    /* margin-right: 2rem; */
+  }
+  .profile-detail
+    .about-group
+    .group-item
+    div:first-child {
+    font-size: 1.8rem;
+    color: var(--light-color);
+    background: var(--text-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+  .profile-detail
+    .about-group
+    .group-item
+    div:last-child {
+    padding: 2rem;
+  }
+  .profile-detail
+    .group-item
+    div:last-child
+    label {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: var(--offline-color);
+  }
+  .profile-detail
+    .tab-content
+    .about-tab
+    .about-group
+    .group-item
+    div:last-child
+    h3 {
+    font-size: 1.5rem;
+    color: var(--paragraph-color);
+    margin-bottom: 0.4rem;
+  }
+  /*About profile*/
+  /*Post Tab start*/
+  .owner-article-group{
+    padding: 0rem 4rem;
+  }
+  /*Post Tab end*/
+  /*Profile detail end*/
+  /*Profile page*/

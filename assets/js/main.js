@@ -39,3 +39,7 @@ function closeReaction(x)
     viewer.toggleClass("active");
     closeBtn.removeClass("active");
 }
+
+$(document).ready(function() {
+    $('#summer').summernote();
+});
