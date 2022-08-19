@@ -343,7 +343,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .follower-item button a,
 .newuser-btn a,
 .reactor-follower a,
-.profile-follower-item button a{
+.profile-follower-item button a,
+.cancel-btn a{
     text-decoration: none;
     color: var(--light-color);
     font-size: 1.2rem;
@@ -1072,7 +1073,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 0.4rem;
   }
   .profile-head .profile-name small {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--offline-color);
   }
   .nav-tab {
@@ -1179,3 +1180,58 @@ input[type="search"]::-webkit-search-results-decoration {
   /*Post Tab end*/
   /*Profile detail end*/
   /*Profile page*/
+
+/*Create post form*/
+.create-form-wrapper{
+    padding-top: 1.4rem;
+}
+.create-form-wrapper .create-post-title{
+    margin-bottom: 0;
+    font-size: 2.3rem;
+}
+.create-post{
+    background-color: var(--light-color);
+    padding: 3rem;
+    border-radius: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.article-create-item{
+    padding-bottom: 2rem;
+}
+.article-create-item label{
+    font-size: 1.5rem;
+    padding-bottom: 0.6rem;
+}
+.article-create-item .form-control,
+.form-select{
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 0.8rem;
+}
+.tooltip-inner{
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: var(--offline-color);
+}
+.article-upload-btn{
+    display: flex;
+    align-items: center;
+    padding: 0 1.3rem;
+}
+.create-form .upload-article,
+.cancel-btn{
+    padding: 1.2rem 1.5rem;
+    font-size: 1.4rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: var(--offline-color);
+    color: var(--light-color);
+    border-radius: 1rem;
+    margin-right: 1.3rem;
+    transition: all 0.4s linear;
+}
+.create-form .upload-article:hover,
+.cancel-btn:hover{
+    background-color: #002595;
+}

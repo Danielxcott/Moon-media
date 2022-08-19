@@ -40,6 +40,5 @@ function closeReaction(x)
     closeBtn.removeClass("active");
 }
 
-$(document).ready(function() {
-    $('#summer').summernote();
-});
+const exampleEl = document.getElementById('slug')
+const tooltip = new bootstrap.Tooltip(exampleEl)

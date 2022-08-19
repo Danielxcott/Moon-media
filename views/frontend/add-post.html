@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON</title>
+    <!--Core Css-->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <!--Nav start-->
+    <nav>
+        <h3 class="nav-title mb-0">
+            <a href="">MOON</a>
+        </h3>
+        <div class="nav-items">
+            <div class="search-box">
+                <form action="" id="search-btn">
+                    <input type="search" placeholder="search" class="input-box">
+                </form>
+                <button type="button" class="search-btn" form="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="/index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+            </button>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="">
+                    <i class="fas fa-paragraph"></i>
+                </a>
+            </button>
+            <button type="button" class="profile-search" form="search-btn">
+                <a href="/views/frontend/user-search.html">
+                    <i class="fas fa-users"></i>
+                </a>
+            </button>
+            <div class="user-profile">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <img src="/assets/img/user/Upstream-1.png" class="user-img" alt="">
+                    <div class="active-status"></div>
+                    <div class="offline-status d-none"></div>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="/views/dashboard/login.html">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav end-->
+    <!--Content start-->
+    <section class="profile-content create-form-wrapper">
+        <div class="create-post">
+            <h3 class="create-post-title">Tell your story ...</h3>
+            <div class="create-form-wrapper">
+                <form action="" class="create-form" enctype="multipart/form-data">
+                    <div class="article-create-item">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" class="form-control">
+                    </div>
+                    <div class="article-create-item">
+                        <label for="slug" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" id="slug"
+                        data-bs-title="The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.">
+                        Slug
+                        </label>
+                        <input type="text" id="slug" name="slug" class="form-control">
+                    </div>
+                    <div class="article-create-item">
+                        <label for="feature_img">Feature Img</label>
+                        <input type="file" id="feature_img" name="feature_img" class="form-control"> 
+                    </div>
+                    <div class="article-create-item">
+                        <label for="images">Images</label>
+                        <input type="file" id="feature_img" name="images" class="form-control"> 
+                    </div>
+                    <div class="article-create-item">
+                        <label for="category">Category</label>
+                        <select name="category" id="category" class="form-select">
+                            <option value="" disabled selected>Choose a category</option>
+                            <option value="">Graphic Design</option>
+                            <option value="">News</option>
+                        </select>
+                    </div>
+                    <div class="article-create-item">
+                        <label for="summer" >Description</label>
+                        <textarea name="description" class="form-control" id="summer" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="article-create-item article-upload-btn">
+                        <button class="upload-article">Upload</button>
+                        <button class="cancel-btn">
+                            <a href="/index.html">Cancel</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-content">
+                <div class="toggle-btn">
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+                <span style="--i:1;">
+                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                </span>
+                <span style="--i:2;">
+                    <a href=""><i class="fas fa-paragraph"></i></a>
+                </span>
+                <span style="--i:3;" class="category-btn">
+                    <a href=""><i class="fas fa-align-left"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!--Content end-->
+    <!--Core Js File-->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
