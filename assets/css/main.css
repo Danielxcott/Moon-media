@@ -716,6 +716,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .article-controller-item .read-all:hover{
     border: 2px solid #1F4690;
 }
+/*Comment aside*/
 .comment-asidenav{
     width: 35rem;
     height: 100vh;
@@ -1214,7 +1215,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .article-create-item .form-control,
 .form-select{
-    line-height: 2.4rem;
+    line-height: 2.4;
     font-size: 1.5rem;
     outline: none;
     border-radius: 0.8rem;
@@ -1331,7 +1332,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .profile-name-group .profile-name 
 .profile-edit-item input,
 .profile-edit-wrapper .profile-edit-item input{
-    line-height: 2.4rem;
+    line-height: 2.4;
     font-size: 1.5rem;
     border-radius: 0.8rem;
 }
@@ -1345,6 +1346,7 @@ input[type="search"]::-webkit-search-results-decoration {
     flex: 1 0 40rem;
     padding: 1rem;
 }
+/*Follower request notification*/
 .request-noti{
     position: relative;
 }

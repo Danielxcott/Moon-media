@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <!--Core Css File-->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <!--CSS File-->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/creator.css">
@@ -172,11 +169,48 @@
                    <h5 class="back-route"><a href="/views/dashboard/add-post.html">Create Post</a></h5>
                    <i class="fas fa-chevron-right"></i>
                    <h5 class="current-route">Detail Post</h5>
-                </div>
-                    <div class="post-tab post-detail-tab">
-                        <div class="post-lists">
-                            <div class="post-card">
-                                <div class="post-img post-img-web">
+                </div>   
+                <div class="article-content">
+                    <div class="article-card">
+                        <div class="article-wrapper">
+                            <div class="article-owner">
+                                <div class="article-owner-item">
+                                    <img src="/assets/img/user/Teamwork-4.png" alt="">
+                                    <div class="article-owner-name">
+                                        <p><a href="">Hailey</a></p>
+                                        <small class="article-category"><a href="">News</a></small>
+                                        <small class="article-created">4 mins ago</small>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn dot-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                                      <li class="dropdown-item">
+                                        <div class="btn-group">
+                                        <button class="btn report-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                            Report
+                                        </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Spam</a></li>
+                                              <li><a class="dropdown-item" href="#">Harassment</a></li>
+                                              <li><a class="dropdown-item" href="">False Information</a></li>
+                                            </ul>
+                                          </div>
+                                        </li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="article-detail-wrapper">
+                                <div class="article-detail-item">
+                                    <h3>Hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                    <img src="/assets/img/posts/post1.jpeg" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit distinctio beatae molestiae? Laudantium veritatis tenetur inventore recusandae quasi esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quisquam natus sed laboriosam dolores possimus corrupti ad, aliquid impedit itaque voluptatem, ipsum numquam, assumenda temporibus corporis doloremque asperiores perspiciatis ut fuga? Accusamus doloribus odit, consectetur aperiam tempora ipsam, laudantium deleniti dolorem, amet rerum corrupti nam! Excepturi rerum blanditiis dolorum nihil?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit distinctio beatae molestiae? Laudantium veritatis tenetur inventore recusandae quasi esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quisquam natus sed laboriosam dolores possimus corrupti ad, aliquid impedit itaque voluptatem, ipsum numquam, assumenda temporibus corporis doloremque asperiores perspiciatis ut fuga? Accusamus doloribus odit, consectetur aperiam tempora ipsam, laudantium deleniti dolorem, amet rerum corrupti nam! Excepturi rerum blanditiis dolorum nihil?</p>
                                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                                         <div class="carousel-indicators">
                                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -185,181 +219,137 @@
                                         </div>
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                            <img src="../../assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
-                                        </div>
+                                            <img src="/assets/img/posts/post1.jpeg" class="d-block" alt="...">
+                                          </div>
                                           <div class="carousel-item">
-                                            <img src="../../assets/img/posts/post1.jpeg" alt="">
-                                        </div>
+                                            <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" class="d-block" alt="...">
+                                          </div>
                                           <div class="carousel-item">
-                                            <img src="../../assets/img/posts/post1.jpeg" alt="">
+                                            <img src="/assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" class="d-block" alt="...">
+                                          </div>
                                         </div>
-                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit distinctio beatae molestiae? Laudantium veritatis tenetur inventore recusandae quasi esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quisquam natus sed laboriosam dolores possimus corrupti ad, aliquid impedit itaque voluptatem, ipsum numquam, assumenda temporibus corporis doloremque asperiores perspiciatis ut fuga? Accusamus doloribus odit, consectetur aperiam tempora ipsam, laudantium deleniti dolorem, amet rerum corrupti nam! Excepturi rerum blanditiis dolorum nihil?</p>
                                 </div>
-                                <div class="post-detail">
-                                    <div class="close-btn"></div>
-                                    <div class="post-profile">
-                                        <img src="../../assets/img/user/Upstream-1.png" alt="">
-                                       <div class="post-header">
-                                        <div class="post-user">
-                                        <h3>Lucien</h3>
-                                        <p>12 minutes ago</p>
+                                <div class="article-detail-controller">
+                                    <div class="reaction-controller">
+                                        <div class="reaction">
+                                            <a href="">                            
+                                                <i class="bi bi-heart-fill"></i>
+                                            </a>
+                                                <span onclick="viewerBtn(1)" class="reaction-count">30</span>
                                         </div>
-                                        <div class="dropbox-list">
-                                            <i class="fa-solid fa-ellipsis-vertical" id="dot"></i>
-                                            <div class="dropbox-card">
-                                                <a href="">Profile</a>
-                                                <form action="">
-                                                    <button class="btn btn-link">Delete</button>
-                                                </form>
-                                                <div class="dropdown-center">
-                                                    <button class="btn btn-link report-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                     Report
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="#">Bad Language</a></li>
-                                                      <li><a class="dropdown-item" href="#">Harassment</a></li>
-                                                      <li><a class="dropdown-item" href="#">Fake news</a></li>
-                                                    </ul>
-                                                  </div>
-                                            </div>
-                                        </div>
-                                       </div>
-                                    </div>
-                                    <div class="post-img post-img-mobile">
-                                        <div id="carouselExampleIndicatorsmobile" class="carousel slide" data-bs-ride="true">
-                                            <div class="carousel-indicators">
-                                              <button type="button" data-bs-target="#carouselExampleIndicatorsmobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                              <button type="button" data-bs-target="#carouselExampleIndicatorsmobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                              <button type="button" data-bs-target="#carouselExampleIndicatorsmobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                              <div class="carousel-item active">
-                                                <img src="../../assets/img/posts/f68acc1ec6b3067888ad0f6c52ef275d.jpeg" alt="">
-                                            </div>
-                                              <div class="carousel-item">
-                                                <img src="../../assets/img/posts/post1.jpeg" alt="">
-                                            </div>
-                                              <div class="carousel-item">
-                                                <img src="../../assets/img/posts/post1.jpeg" alt="">
-                                            </div>
-                                            </div>
+                                        <div class="comment" id="commentBtn1" onclick="commentBtn(1)">
+                                            <i class="bi bi-chat-right-quote-fill"></i>   
+                                            <span class="message-count">5</span>                     
                                         </div>
                                     </div>
-                                    <div class="post-paragraph">
-                                        <h3>Lorem, ipsum dolor.</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid accusantium modi provident. Suscipit illum obcaecati enim quasi, aliquid laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque sequi esse deleniti, cupiditate odit consequuntur atque corporis officia, iste libero magni? Dolore provident natus unde ea dicta deserunt quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid accusantium modi provident. Suscipit illum obcaecati enim quasi, aliquid laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque sequi esse deleniti, cupiditate odit consequuntur atque corporis officia, iste libero magni? Dolore provident natus unde ea dicta deserunt quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid accusantium modi provident. Suscipit illum obcaecati enim quasi, aliquid laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque sequi esse deleniti, cupiditate odit consequuntur atque corporis officia, iste libero magni? Dolore provident natus unde ea dicta deserunt quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid accusantium modi provident. Suscipit illum obcaecati enim quasi, aliquid laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque sequi esse deleniti, cupiditate odit consequuntur atque corporis officia, iste libero magni? Dolore provident natus unde ea dicta deserunt quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid accusantium modi provident. Suscipit illum obcaecati enim quasi, aliquid laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque sequi esse deleniti, cupiditate odit consequuntur atque corporis officia, iste libero magni? Dolore provident natus unde ea dicta deserunt quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid accusantium modi provident. Suscipit illum obcaecati enim quasi, aliquid laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque sequi esse deleniti, cupiditate odit consequuntur atque corporis officia, iste libero magni? Dolore provident natus unde ea dicta deserunt quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid accusantium modi provident. Suscipit illum obcaecati </p>
-                                    </div>
-                                    <div class="post-controller">
-                                        <div class="post-reaction">
-                                            <a href=""><i class="fa-solid fa-heart"></i></a>
-                                            <span class="like-btn">12 likes</span>
-                                        </div>
-                                        <div class="post-comment">
-                                            <a href=""><i class="fa-solid fa-comment"></i></a>
-                                            <span class="comment-btn">4 comments</span>
-                                        </div>
-                                    </div>
-                                    <div class="all-reaction">
-                                        <div><h4 class="mb-0 text-center">Likes</h4></div>
-                                        <div class="user-like-lists">
-                                            <div class="user-like-tab mb-3">
-                                                <img src="../../assets/img/user/Upstream-2.png" alt="">
-                                                <div class="user-name-group">
-                                                    <div class="user-name-item">
-                                                    <h3>Taylor</h3>
-                                                    <small>@taylor</small>
-                                                    </div>
-                                                    <button class="add-btn"><a href="">Add friend</a></button>
-                                                </div>
-                                            </div>
-                                            <div class="user-like-tab mb-3">
-                                                <img src="../../assets/img/user/Upstream-2.png" alt="">
-                                                <div class="user-name-group">
-                                                    <div class="user-name-item">
-                                                    <h3>Taylor</h3>
-                                                    <small>@taylor</small>
-                                                    </div>
-                                                    <button class="add-btn"><a href="">Add friend</a></button>
-                                                </div>
-                                            </div>
-                                            <div class="user-like-tab mb-3">
-                                                <img src="../../assets/img/user/Upstream-2.png" alt="">
-                                                <div class="user-name-group">
-                                                    <div class="user-name-item">
-                                                    <h3>Taylor</h3>
-                                                    <small>@taylor</small>
-                                                    </div>
-                                                        <button class="add-btn"><a href="">Followed</a></button>
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="all-comment">
-                                        <div class="header">
-                                            <h4 class="mb-0 text-center">Comments</h4>
-                                            <i class="fas fa-edit" id="write-comment"></i>
-                                        </div>
-                                        <div class="user-comment-lists">
-                                            <div class="user-comment-tab mb-3">
-                                                <div class="user-name-group">
-                                                    <img src="../../assets/img/user/Upstream-2.png" alt="">
-                                                    <div class="user-name-item d-flex justify-content-between w-100">
-                                                        <div class="name-group">
-                                                            <h3>Taylor</h3>
-                                                            <small>@taylor</small>
-                                                        </div>
-                                                        <button class="trash-btn"><i class="fas fa-trash"></i></button>
-                                                    </div>
-                                                </div>
-                                                <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa.</p>
-                                            </div>
-                                            <div class="user-comment-tab mb-3">
-                                                <div class="user-name-group">
-                                                    <img src="../../assets/img/user/Upstream-2.png" alt="">
-                                                    <div class="user-name-item d-flex justify-content-between w-100">
-                                                        <div class="name-group">
-                                                            <h3>Taylor</h3>
-                                                            <small>@taylor</small>
-                                                        </div>
-                                                        <button class="trash-btn"><i class="fas fa-trash"></i></button>
-                                                    </div>
-                                                </div>
-                                                <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa.</p>
-                                            </div>
-                                            <div class="user-comment-tab mb-3">
-                                                <div class="user-name-group">
-                                                    <img src="../../assets/img/user/Upstream-2.png" alt="">
-                                                    <div class="user-name-item d-flex justify-content-between w-100">
-                                                        <div class="name-group">
-                                                            <h3>Taylor</h3>
-                                                            <small>@taylor</small>
-                                                        </div>
-                                                        <button class="trash-btn"><i class="fas fa-trash"></i></button>
-                                                    </div>
-                                                </div>
-                                                <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa.</p>
-                                            </div>
-                                            <div class="comment-box">
-                                                <form action="">
-                                                    <input type="hidden" name="">
-                                                    <textarea name="comment" placeholder="write a comment..." class="form-control" id="" cols="30" rows="2"></textarea>
-                                                    <button type="submit" class="send-btn" >Done</button>
-                                                </form>
-                                            </div>
-                                        </div>
+                                    <div class="article-controller-item">
+                                        <a href="" class="left-control"><i class="bi bi-arrow-left-circle"></i></a>
+                                        <a href="/index.html" class="read-all">Read all</a>
+                                        <a href="" class="right-control"><i class="bi bi-arrow-right-circle"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
+                </div>
             </div>
         </section>
         <!--Content section-->
     </main>
      <!--Main content-->
+     <!--Comment-aside-->
+     <div class="comment-asidenav">
+        <div class="comment-aside-close"></div>
+            <div class="comment-header">
+                <h3>Comments(5)</h3>
+                <button class="close-com-btn"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="comment-card">
+                <div class="comment-owner">
+                    <img src="/assets/img/user/Upstream-1.png" alt="">
+                    <span>Lucien</span>
+                </div>
+                <form action="" class="comment-box">
+                    <textarea name="" id="" class="form-control comment-input" placeholder="what are your thoughts?" cols="30" rows="5"></textarea>
+                    <button>Response</button>
+                </form>
+            </div>
+        <ul class="comment-lists">
+            <li class="comment-item">
+                <div class="user-item-group">
+                    <img src="/assets/img/user/Teamwork-7.png" alt="">
+                    <div class="user-name">
+                        <a href=""><p>Luke</p></a>
+                        <span>4 mins ago</span>
+                    </div>
+                </div>
+                <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quam enim totam iure repudiandae corporis iusto qui quae! Non, vero.</p>
+                <div class="comment-controller">
+                    <span></span>
+                    <span class="reply-btn">reply</span>
+                </div>
+                <div class="divider-line"></div>
+            </li>
+            <li class="comment-item">
+                <div class="user-item-group">
+                    <img src="/assets/img/user/Teamwork-7.png" alt="">
+                    <div class="user-name">
+                        <a href=""><p>Luke</p></a>
+                        <span>4 mins ago</span>
+                    </div>
+                </div>
+                <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quam enim totam iure repudiandae corporis iusto qui quae! Non, vero.</p>
+                <div class="divider-line"></div>
+            </li>
+            <li class="comment-item">
+                <div class="user-item-group">
+                    <img src="/assets/img/user/Teamwork-7.png" alt="">
+                    <div class="user-name">
+                        <a href=""><p>Luke</p></a>
+                        <span>4 mins ago</span>
+                    </div>
+                </div>
+                <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quam enim totam iure repudiandae corporis iusto qui quae! Non, vero.</p>
+                <div class="divider-line"></div>
+            </li>
+        </ul>
+    </div>  
+     <!--Reaction viewers-->
+     <div class="reaction-viewers" id="viewers1">
+        <div class="reaction-viewers-close" id="viewerClose1" onclick="closeReaction(1)"></div>
+        <div class="reaction-viewers-wrapper">
+            <div class="reaction-viewer-title">
+                <p>You got <span>30</span> loves for <span>"Hello Lorem ipsum dolor sit amet..."</span> </p>
+                <button onclick="closeReaction(1)"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="reaction-viewers-lists">
+                <div class="reaction-viewers-item">
+                    <div class="reaction-viewer-name">
+                        <img src="/assets/img/user/Teamwork-8.png" alt="">
+                        <span><a href="">Vincent</a></span>
+                    </div>
+                    <button class="reactor-follower"><a href="">Follow</a></button>
+                </div>
+                <div class="reaction-viewers-item">
+                    <div class="reaction-viewer-name">
+                        <img src="/assets/img/user/Teamwork-8.png" alt="">
+                        <span><a href="">Vincent</a></span>
+                    </div>
+                    <button class="reactor-follower"><a href="">Follow</a></button>
+                </div>
+            </div>
+        </div>  
+    </div>
     <!--Noti-bar-->
     <nav class="noti-nav">
         <div class="noti-close"></div>

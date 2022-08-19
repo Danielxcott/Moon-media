@@ -62,7 +62,66 @@ $("#write-comment").click(function(){
     $(".user-comment-lists .comment-box").toggleClass("active");
 })
 
+//edit profile start
+$(".edit-cover-photo").delegate(".edit-cover-btn","click",function(){
+  let x = $(this).parent().find("#cover-input");
+ $(this).parent().find("#cover-input").click();
+ if(x !== "")
+ {
+  $(".current-img-extension").text(x.val());
+ }else
+ {
+  $(".current-img-extension").text(x.val());
+ }
+})
 
+$(".edit-profile-photo").delegate(".edit-profile-btn","click",function(){
+ $(this).parent().find("#profile-input").click();
+})
+
+function commentBtn(x)
+{
+    $(".comment-asidenav").toggleClass("active");
+}
+
+$(".comment-aside-close").click(function(){
+    $(".comment-asidenav").toggleClass("active");
+})
+$(".close-com-btn").click(function(){
+    $(".comment-asidenav").toggleClass("active");
+})
+
+function viewerBtn(x)
+{
+    const viewer = $("#viewers"+x);
+    const close = $("#viewerClose"+x);
+    viewer.toggleClass("active");
+    close.addClass("active");
+}
+
+function closeReaction(x)
+{
+    const closeBtn = $("#viewerClose"+x);
+    const viewer = $("#viewers"+x);
+    viewer.toggleClass("active");
+    closeBtn.removeClass("active");
+}
+
+//viewer follower
+function viewerFollower(x)
+{
+    const viewer = $("#viewerFollower"+x);
+    const close = $("#viewerFollowerClose"+x);
+    viewer.toggleClass("active");
+    close.addClass("active");
+}
+function closeViewerFollower(x)
+{
+    const closeBtn = $("#viewerFollowerClose"+x);
+    const viewer = $("#viewerFollower"+x);
+    viewer.toggleClass("active");
+    closeBtn.removeClass("active");
+}
 
 //login gsap
 const containers = document.querySelectorAll(".input-container");

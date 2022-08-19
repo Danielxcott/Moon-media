@@ -40,7 +40,6 @@ html {
 a {
   text-decoration: none;
 }
-
 /*aside start*/
 aside {
   position: fixed;
@@ -711,10 +710,8 @@ a {
   backdrop-filter: blur(2px);
 }
 .profile-head {
-  display: flex;
-  width: 25rem;
   padding: 1rem;
-  justify-content: flex-end;
+  justify-content: end;
   position: relative;
 }
 .profile-head .profile-pic {
@@ -773,7 +770,7 @@ a {
 }
 .post-tab{
   padding: 2.8rem;
-  background-color: #f1f1f1;
+  background-color: var(--light-color);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   border-radius: 1.3rem;
 }
@@ -903,7 +900,7 @@ a {
 }
 /*Edit Profile*/
 /*Post Tab start*/
-.post-tab .post-lists .post-card {
+/* .post-tab .post-lists .post-card {
   display: flex;
   background-color: var(--light-color);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -959,7 +956,6 @@ a {
 display: none;
 position: absolute;
 width: 12rem;
-/* height: 10rem; */
 text-align: left;
 background-color: var(--light-color);
 box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -1238,10 +1234,350 @@ padding-left: 1.3rem;
 .user-name-group .add-btn a{
   color: var(--light-color);
   font-size: 1.3rem;
+} */
+
+.content-user-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 4rem;
+}
+.content-user-group .user-profile{
+  position: relative;
+}
+.content-user-group .active-status{
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--online-color);
+  top: 38px;
+  left: 38px;
+}
+.content-user-group .offline-status{
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--online-color);
+  top: 38px;
+  left: 38px;
+}
+.content-user-group .user-profile a{
+  text-decoration: none;
+}
+.content-user-group .user-profile img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.content-user-group .user-profile .user-name{
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 0 1.4rem;
+}
+.content-user-group i{
+  font-size: 2rem;
+}
+.content-article-group{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.content-article-group,
+.content-article-footer{
+  padding: 0 5rem;
+}
+.content-article-footer {
+  display: flex;
+  padding-bottom: 3rem;
+}
+.content-article-group img{
+  width: 30rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+.profile-search a i{
+  font-size: 1.4rem;
+}
+.content-article-footer small a,
+.article-paragraph a{
+  color: var(--text-color);
+}
+.content-article-footer small:first-child {
+  padding: 1rem 1.3rem;
+  border-radius: 2rem;
+  background-color: var(--grey-color);
+  font-size: 1.1rem;
+}
+.content-article-footer small:last-child {
+  font-size: 1.1rem;
+  padding-left: 1.3rem;
+}
+.divider-line {
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--offline-color);
+  opacity: 0.2;
+  border-radius: 4rem;
 }
 /*Post Tab end*/
 /*Profile detail end*/
+/*Profile edit start*/
+.edit-profile-cover,
+.edit-profile-pic{
+    position: relative;
+}
+.edit-cover-photo,
+.edit-profile-photo{
+    position: absolute;
+    top: 0;
+    background-color: var(--offline-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    backdrop-filter: blur(5px);
+    background-clip: padding-box;
+}
+.edit-profile-photo{
+    border-radius: 50%;
+}
+.edit-cover-btn,
+.edit-profile-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    cursor: pointer;
+}
+.edit-cover-btn small{
+    font-size: 1.4rem;
+    color: var(--light-color); 
+    font-weight: 500;  
+}
+.edit-cover-photo i{
+    font-size: 2rem;
+    color: var(--light-color);   
+    font-weight: 500;
+}
+.error-cover-message{
+    position: absolute;
+    bottom: 19px;
+    right: 5px;
+    color: #ed6142;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: none;
+}
+.error-cover-message.is-invalid{
+    display: block;
+}
+.error-profile-message{
+    position: absolute;
+    color: #ed6142;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: none;
+}
+.error-profile-message.is-invalid{
+    display: block;
+}
+.update-profile-btn{
+    color: var(--light-color);
+}
+.edit-profile-btn small,
+.edit-profile-btn i{
+    color: var(--light-color);
+    font-weight: 500;
+    user-select: none;
+}
+.profile-name-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.3rem;
+    align-items: center;
+    text-align: center;
+}
+.profile-edit-update{
+  display: grid;
+  justify-items: flex-end;
+  padding: 0 1.3rem;
+}
+.profile-name-group .profile-name {
+  flex: 1 0 12rem;
+}
+.profile-name-group .profile-name 
+.profile-edit-item{
+    padding-bottom: 2rem;
+}
+.profile-name-group .profile-name 
+.profile-edit-item label,
+.profile-edit-wrapper .profile-edit-item label{
+    font-size: 1.5rem;
+    padding-bottom: 0.6rem;
+}
+.profile-name-group .profile-name 
+.profile-edit-item input,
+.profile-edit-wrapper .profile-edit-item input{
+    line-height: 2.4;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+}
+.profile-edit-wrapper .profile-edit-item .form-select{
+  line-height: 2.4;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 0.8rem;
+}
+.profile-edit-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.3rem;
+}
+.profile-edit-wrapper .profile-edit-item{
+    flex: 1 0 40rem;
+    padding: 1rem;
+}
+.profile-follower-item {
+  font-size: 1.6rem;
+  font-weight: 500;
+  flex: 2 0 10rem;
+}
+.profile-follower-item button {
+  border: none;
+  padding: 1.3rem 1.5rem;
+  font-size: 1.3rem;
+  background-color: #002595;
+  border-radius: 0.8rem;
+  font-weight: 500;
+}
+.profile-follower-item button:last-child {
+  background-color: #383838;
+}
+.profile-follower-item button:last-child:hover a{
+  color: var(--light-color);
+}
+.profile-follower-wrapper .profile-follower-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30rem;
+  margin: auto;
+}
+.profile-bio {
+  padding: 1rem 17rem;
+}
+.profile-bio p {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  color: var(--paragraph-color);
+  font-weight: 400;
+}
+/*viewer follower*/
+#viewer-follower{
+  cursor: pointer;
+}
+.reaction-viewers{
+  position: fixed;
+  z-index: 4;
+  top: 450rem;
+  height: 100%;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.reaction-viewers.active{
+  top: 0;
+}
+.reaction-viewers-close{
+  width: 0;
+  height: 100%;
+  cursor: pointer;
+  background-color: #ffffff6d;
+  backdrop-filter: blur(5px);
+  background-clip: padding-box;
+  position: absolute;
+  z-index: -1;
+  top: 450rem;
+  transition: all 0.5s ease;
+}
+.reaction-viewers-close.active{
+  width: 100vw;
+  top:0;
+}
+.reaction-viewers-wrapper{
+  width: 50rem;
+}
+.reaction-viewers-lists{
+ height: 50vh;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.reaction-viewers-lists::-webkit-scrollbar{
+  display: none;
+}
+.reaction-viewers-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.reaction-viewer-name{
+  display: flex;
+  align-items: center;
+}
+.reaction-viewer-name img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.reaction-viewer-name span{
+  padding-left: 1.3rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.reactor-follower{
+  padding: 1rem 1.7rem;
+  background-color: #1F4690;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.2rem;
+}
+.reaction-viewer-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reaction-viewer-title p{
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.comment-header button, .reaction-viewer-title button {
+  padding: 1rem 1.2rem;
+  border: none;
+  background-color: transparent;
+}
+.comment-header button>i, .reaction-viewer-title button>i {
+  font-size: 1.8rem;
+}
+.reaction-viewer-name span a{
+  color: var(--text-color);
+}
 /*Profile page*/
+
 
 /*Responsive*/
 @media screen and (max-width: 1200px) {
