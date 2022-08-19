@@ -25,6 +25,12 @@ $(".close-com-btn").click(function(){
     $(".comment-asidenav").toggleClass("active");
 })
 
+$(".request-noti").click(function(){
+    $(".noti-nav").toggleClass("active");
+})
+$(".noti-close").click(function(){
+    $(".noti-nav").toggleClass("active");
+})
 function viewerBtn(x)
 {
     const viewer = $("#viewers"+x);
@@ -37,6 +43,22 @@ function closeReaction(x)
 {
     const closeBtn = $("#viewerClose"+x);
     const viewer = $("#viewers"+x);
+    viewer.toggleClass("active");
+    closeBtn.removeClass("active");
+}
+
+function viewerFollower(x)
+{
+    const viewer = $("#viewerFollower"+x);
+    const close = $("#viewerFollowerClose"+x);
+    viewer.toggleClass("active");
+    close.addClass("active");
+}
+
+function closeViewerFollower(x)
+{
+    const closeBtn = $("#viewerFollowerClose"+x);
+    const viewer = $("#viewerFollower"+x);
     viewer.toggleClass("active");
     closeBtn.removeClass("active");
 }
@@ -61,6 +83,5 @@ $(".edit-cover-photo").delegate(".edit-cover-btn","click",function(){
 })
 
 $(".edit-profile-photo").delegate(".edit-profile-btn","click",function(){
-    let x = $(this).parent().find("#profile-input");
    $(this).parent().find("#profile-input").click();
 })
