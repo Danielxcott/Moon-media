@@ -18,25 +18,17 @@
             <a href="/index.html">MOON</a>
         </h3>
         <div class="nav-items">
-            <div class="search-box">
-                <form action="" id="search-btn">
-                    <input type="search" placeholder="search" class="input-box">
-                </form>
-                <button type="button" class="search-btn" form="search-btn">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-            <button type="button" class="profile-search">
+            <button type="button" class="profile-search nav-home">
                 <a href="/index.html">
                     <i class="fas fa-home"></i>
                 </a>
             </button>
-            <button type="button" class="profile-search">
+            <button type="button" class="profile-search nav-paragraph">
                 <a href="/views/frontend/add-post.html">
                     <i class="fas fa-paragraph"></i>
                 </a>
             </button>
-            <button type="button" class="profile-search">
+            <button type="button" class="profile-search nav-users">
                 <a href="/views/frontend/user-search.html">
                     <i class="fas fa-users"></i>
                 </a>
@@ -92,17 +84,7 @@
                         <small>The file extension you use is not support!!</small>
                     </div>
                 </div>
-                <div class="profile-name-group">
-                    <div class="profile-name">
-                        <div class="profile-edit-item">
-                            <label for="">Name</label>
-                            <input type="name" name="name" required class="form-control" form="edit-profile" value="Lucien">
-                        </div>
-                        <div class="profile-edit-item">
-                            <label for="">Username</label>
-                            <input type="text" name="username" required class="form-control" form="edit-profile" value="lucien">
-                        </div>
-                    </div>
+                <div class="profile-edit-group">
                     <div class="profile-follower-item">
                         <button form="edit-profile" class="update-profile-btn" type="submit">Update</button>
                         <button><a href="/views/frontend/profile.html">Cancel</a></button>
@@ -111,13 +93,21 @@
             </div>
             <div class="profile-edit-wrapper">
                 <div class="profile-edit-item">
+                    <label for="">Name</label>
+                    <input type="name" name="name" required class="form-control" form="edit-profile" value="Lucien">
+                </div>
+                <div class="profile-edit-item">
+                    <label for="">Username</label>
+                    <input type="text" name="username" required class="form-control" form="edit-profile" value="lucien">
+                </div>
+                <div class="profile-edit-item">
                     <label for="">Email</label>
                     <input type="email" name="email" required class="form-control" form="edit-profile" value="">
                 </div>
-                <div class="profile-edit-item">
+                <!-- <div class="profile-edit-item">
                     <label for="password">Password</label>
                     <input type="password" name="password" required class="form-control" form="edit-profile" value="">
-                </div>
+                </div> -->
                 <div class="profile-edit-item">
                     <label for="gender">Gender</label>
                     <select name="gender" id="gender" form="edit-profile" class="form-select">
@@ -140,19 +130,19 @@
                 </div>
             </div>
            </div>
-        <div class="nav-menu">
+           <div class="nav-menu">
             <div class="nav-content">
                 <div class="toggle-btn">
                     <i class="bi bi-plus-lg"></i>
                 </div>
                 <span style="--i:1;">
-                    <a href="/index.html"><i class="fas fa-home"></i></a>
+                    <a href="/views/frontend/profile.html"><img src="/assets/img/user/Upstream-1.png" class="nav-menu-profile" alt=""></a>
                 </span>
                 <span style="--i:2;">
-                    <a href=""><i class="fas fa-paragraph"></i></a>
+                    <a href="/views/frontend/add-post.html"><i class="fas fa-paragraph"></i></a>
                 </span>
-                <span style="--i:3;" class="category-btn">
-                    <a href=""><i class="fas fa-align-left"></i></a>
+                <span style="--i:3;" class="">
+                    <a href="/views/frontend/user-search.html"><i class="fas fa-users"></i></a>
                 </span>
             </div>
         </div>

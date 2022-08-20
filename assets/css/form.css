@@ -491,6 +491,15 @@ a {
     .choose-options button a:last-child{
         display: none;
     }
+    .signup-right{
+        height: 100vh;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .signup-right::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 /*Responsive*/

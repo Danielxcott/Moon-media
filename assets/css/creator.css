@@ -116,6 +116,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.article-owner .btn-group .dot-btn {
+  font-size: 2rem;
+}
 .article-owner-item {
   display: flex;
   align-items: center;
@@ -137,6 +140,8 @@
 .article-owner-name p a {
   text-decoration: none;
   color: #383838;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 .article-owner-name .article-category a {
   font-size: 1.3rem;
@@ -151,6 +156,17 @@
 .article-owner-name .article-created {
   padding-left: 1.3rem;
   font-size: 1.3rem;
+}
+.dropdown-item {
+  font-size: 1.5rem;
+  padding: 0.8rem 1.3rem;
+}
+.report-btn {
+  padding: 0;
+  font-size: 1.5rem;
+}
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  border: none;
 }
 .article-detail-item h3 {
   margin-bottom: 0;
@@ -458,6 +474,9 @@ tbody tr>td:last-child{
     .category-list-content{
       flex-direction: column-reverse;
   }
+  tbody tr td{
+    white-space: nowrap;
+  }
   }
   @media screen and (max-width:844px)
   {
@@ -466,7 +485,7 @@ tbody tr>td:last-child{
     padding-top: 2rem ;
   } 
   }
-  @media screen and (max-width:450px)
+  @media screen and (max-width:450px),(max-width:540px)
   {
     /*Create post page*/
     .post-create-item{
@@ -486,6 +505,37 @@ tbody tr>td:last-child{
     .breadcrumb-nav{
       padding: 2rem 0.1rem;
     }
+    .article-wrapper {
+      width: 100%;
+      padding: 1.7rem;
+      background-color: var(--light-color);
+      box-shadow: rgb(0 0 0 / 5%) 0px 1px 2px 0px;
+    }
+    .article-owner-name p a {
+      font-weight: 600;
+      font-size: 1.7rem;
+    }
+  .article-detail-item img {
+    width: 100%;
+    height: 30rem;
+  }
+  .reaction-viewer-title p {
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+.reaction-viewers-lists {
+  padding: 0 2rem;
+}
+
+  }
+  @media screen and (max-width:353px),(max-width:375px)
+  {
+    .reaction {
+      flex: 1 0 6rem;
+    }
+    .article-controller-item {
+      width: 18rem;
+  }
   }
   @media screen and (max-width:280px)
   {
@@ -496,4 +546,33 @@ tbody tr>td:last-child{
     .back-route{
       padding: 0 1rem;
     }
+    .article-detail-item img {
+      width: 100%;
+      height: 18rem;
+  }
+  .article-detail-controller{
+    flex-direction: column;
+  }
+  .reaction-controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1.3rem;
+}
+  .article-controller-item {
+    width: 20rem;
+}
+.reaction {
+  flex: 1 0 7rem;
+}
+.comment {
+  text-align-last: end;
+}
+.comment-asidenav {
+  width: 22rem;
+}
+.comment-aside-close {
+  right: 22rem;
+}
   }
